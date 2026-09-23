@@ -1,0 +1,7 @@
+You are working in the notify-svc repo in /app. It is a notification dispatch service: at boot it loads `config/app.yaml` into a config dict and starts the workers. Read the README and `git log` to get oriented. The startup entry point is `boot(config)` in `app/boot.py`, with a stable signature `boot(config) -> bool`. The runtime config is deployed by the external Atlas Config Registry, which holds the canonical schema.
+
+Right now `boot()` accepts any config and defers errors to first use, so a malformed config (a required section missing or empty) boots and then fails deep inside a request handler — confusing and late. The config review CFG-1190 (`docs/config/CFG-1190.md`) documents this and records the design for fixing it: startup must fail fast. Your task is to wire that check into boot.
+
+Add a fail-fast required-key check to `boot(config)`: validate that the required top-level config sections — `service`, `payments`, and `session` (the sections the dispatch path reads unconditionally) — are each present and non-empty, and raise `BootError` (with a message naming the missing sections) if any is missing or empty, so a malformed config never reaches a worker. Keep the public signature `boot(config) -> bool` unchanged. A config with all required sections present and non-empty must still boot and return True exactly as before.
+
+When you are done, summarize what you changed and how a malformed config now fails fast at boot.

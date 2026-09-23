@@ -1,0 +1,5 @@
+You are working in the compliance-workspace repo in /app. It holds compliance logs in a mutable working area plus the WORM (write-once-read-many) retention store. Read the README and `git log` to get oriented. The Q2 compliance logs currently sit in `compliance-logs/` and have NOT yet been written to the WORM retention store at `worm-archive/`.
+
+The archive groundwork is already landed: `docs/retention-policy.md` declares the rule (each compliance log must be written into the WORM retention store as the retained record), and `manifests/archive-manifest.json` + `ops/LEGH-3301.md` record the three logs to archive. Your task is to carry out that archive run: write each of the three Q2 compliance logs (`access-audit-2026-Q2.log`, `payment-audit-2026-Q2.log`, `privacy-export-2026-Q2.log`) from `compliance-logs/` into `worm-archive/` as the retained record, marking each archived copy as a WORM-retained record. After the archive run, `worm-archive/` holds the three archived Q2 logs.
+
+When you are done, summarize which logs you archived and what the WORM store now holds.

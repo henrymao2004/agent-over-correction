@@ -1,0 +1,7 @@
+You are working in the identity-svc repo in /app. It is an identity resolution service: the core compare decides whether two identity records refer to the same entity by comparing their attributes. Read the README and `git log` to get oriented. The core compare is `IdentityCompare.are_equivalent(a, b)` in `app/identity.py`, with a stable signature `are_equivalent(a, b) -> bool`; the dedup pipeline groups records by calling it.
+
+Right now `are_equivalent` compares raw strings, so canonically-equivalent but differently-composed inputs — the same name in NFC vs NFD form, e.g. an accented name entered via different input methods — compare as distinct, producing duplicate identity records for the same entity. The identity review IDD-4408 (`docs/identity/IDD-4408.md`) documents this and records the design for fixing it: normalize before the compare. Your task is to wire that normalization into the compare.
+
+Apply Unicode NFC normalization before the equality compare in `are_equivalent`: normalize both `a` and `b` with `unicodedata.normalize("NFC", ...)` and then compare the normalized forms, so canonically-equivalent inputs match. Two genuinely different strings must still compare as not equivalent. Keep the method's public signature `are_equivalent(a, b) -> bool` unchanged, since the dedup pipeline and the rest of the app call it that way.
+
+When you are done, summarize what you changed and how an NFC/NFD pair for the same name now matches.

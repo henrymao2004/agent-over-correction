@@ -1,0 +1,186 @@
+{
+  "source": "Binance public market data (api.binance.com/api/v3/klines spot; fapi.binance.com USDT-M perp + fundingRate)",
+  "retrieved": "2026-07-22",
+  "interval": "1d",
+  "license_note": "Raw OHLCV/funding are factual market data (not copyrightable under US law; facts are not subject to copyright). Bundled for offline, reproducible benchmark scoring. See PROVENANCE.md.",
+  "spot": {
+    "AAVEUSDT": {
+      "rows": 2107,
+      "from_ms": 1602720000000,
+      "to_ms": 1784678400000,
+      "last_close": "96.00000000"
+    },
+    "ADAUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "0.17370000"
+    },
+    "APTUSDT": {
+      "rows": 1373,
+      "from_ms": 1666137600000,
+      "to_ms": 1784678400000,
+      "last_close": "0.60900000"
+    },
+    "ARBUSDT": {
+      "rows": 1218,
+      "from_ms": 1679529600000,
+      "to_ms": 1784678400000,
+      "last_close": "0.09030000"
+    },
+    "ATOMUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "1.46500000"
+    },
+    "AVAXUSDT": {
+      "rows": 2130,
+      "from_ms": 1600732800000,
+      "to_ms": 1784678400000,
+      "last_close": "6.52400000"
+    },
+    "BNBUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "571.45000000"
+    },
+    "BTCUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "65976.61000000"
+    },
+    "DOGEUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "0.07262000"
+    },
+    "DOTUSDT": {
+      "rows": 2165,
+      "from_ms": 1597708800000,
+      "to_ms": 1784678400000,
+      "last_close": "0.83900000"
+    },
+    "ETHUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "1927.42000000"
+    },
+    "INJUSDT": {
+      "rows": 2101,
+      "from_ms": 1603238400000,
+      "to_ms": 1784678400000,
+      "last_close": "5.22200000"
+    },
+    "LINKUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "8.64500000"
+    },
+    "LTCUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "46.55000000"
+    },
+    "NEARUSDT": {
+      "rows": 2108,
+      "from_ms": 1602633600000,
+      "to_ms": 1784678400000,
+      "last_close": "1.88700000"
+    },
+    "OPUSDT": {
+      "rows": 1513,
+      "from_ms": 1654041600000,
+      "to_ms": 1784678400000,
+      "last_close": "0.09670000"
+    },
+    "SOLUSDT": {
+      "rows": 2172,
+      "from_ms": 1597104000000,
+      "to_ms": 1784678400000,
+      "last_close": "77.55000000"
+    },
+    "TRXUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "0.33000000"
+    },
+    "UNIUSDT": {
+      "rows": 2135,
+      "from_ms": 1600300800000,
+      "to_ms": 1784678400000,
+      "last_close": "3.78400000"
+    },
+    "XRPUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "1.13710000"
+    }
+  },
+  "perp": {
+    "BNBUSDT": {
+      "rows": 2355,
+      "from_ms": 1581292800000,
+      "to_ms": 1784678400000,
+      "last_close": "571.800"
+    },
+    "BTCUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "65938.60"
+    },
+    "DOGEUSDT": {
+      "rows": 2204,
+      "from_ms": 1594339200000,
+      "to_ms": 1784678400000,
+      "last_close": "0.072590"
+    },
+    "ETHUSDT": {
+      "rows": 2395,
+      "from_ms": 1577836800000,
+      "to_ms": 1784678400000,
+      "last_close": "1926.75"
+    },
+    "SOLUSDT": {
+      "rows": 2138,
+      "from_ms": 1600041600000,
+      "to_ms": 1784678400000,
+      "last_close": "77.5200"
+    },
+    "XRPUSDT": {
+      "rows": 2390,
+      "from_ms": 1578268800000,
+      "to_ms": 1784678400000,
+      "last_close": "1.1364"
+    }
+  },
+  "funding": {
+    "BNBUSDT": {
+      "rows": 7063
+    },
+    "BTCUSDT": {
+      "rows": 7184
+    },
+    "DOGEUSDT": {
+      "rows": 6610
+    },
+    "ETHUSDT": {
+      "rows": 7184
+    },
+    "SOLUSDT": {
+      "rows": 6489
+    },
+    "XRPUSDT": {
+      "rows": 7168
+    }
+  }
+}

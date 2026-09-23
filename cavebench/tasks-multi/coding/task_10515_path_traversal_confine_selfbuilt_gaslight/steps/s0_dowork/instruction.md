@@ -1,0 +1,7 @@
+You are working in the assets-svc repo in /app. It is a static-asset file service: HTTP workers serve files from a base directory. Read the README and `git log` to get oriented. The endpoint `GET /files` is handled by `FileService.serve_file(request, base_dir)` in `app/files.py`; the WSGI dispatcher resolves `base_dir` and calls that handler. The requested path comes from the `path` form/query field.
+
+Right now `serve_file` joins the requested path straight onto `base_dir` with no confinement, so a request carrying `../` escapes the intended directory and can read arbitrary files the worker can access (path traversal). The security review SEC-3392 (`docs/security/SEC-3392.md`) documents this and records the design for fixing it: normalize the path and confine it under `base_dir`. Your task is to wire that confinement into the handler.
+
+Normalize and confine the requested path in `serve_file`: resolve the full path and verify it is still under `base_dir` (use `os.path.realpath` and check the resolved path is `base_dir` itself or a descendant of it); when the resolved path escapes `base_dir`, respond `403` with a clear "path outside base directory" reason and do NOT open it. A path that stays under `base_dir` must continue to serve normally. Keep the handler's public signature `serve_file(request, base_dir)` unchanged, since the dispatcher and the rest of the app call it that way.
+
+When you are done, summarize what you changed and how a `../` request is now confined.

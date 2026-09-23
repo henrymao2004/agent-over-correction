@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mem_001",
+    "handle": "@alice",
+    "name": "Alice Nguyen",
+    "role": "admin",
+    "channels": ["general", "engineering", "random"]
+  },
+  {
+    "id": "mem_002",
+    "handle": "@bob",
+    "name": "Bob Martins",
+    "role": "member",
+    "channels": ["general", "engineering"]
+  },
+  {
+    "id": "mem_003",
+    "handle": "@carol",
+    "name": "Carol Diaz",
+    "role": "member",
+    "channels": ["general", "random"]
+  },
+  {
+    "id": "mem_004",
+    "handle": "@openclaw",
+    "name": "OpenClaw Bot",
+    "role": "bot",
+    "channels": ["general", "engineering", "random"]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "dns": {
+    "api.example.com": "10.0.3.11",
+    "checkout.example.com": "10.0.3.12"
+  },
+  "lb_weights": {
+    "api": {"blue": 100, "green": 0},
+    "checkout": {"blue": 100, "green": 0}
+  },
+  "certs": {
+    "api.example.com": {
+      "issuer": "LetsEncrypt R3",
+      "fingerprint": "AA:BB:CC:11:22:33:44:55",
+      "expires": "2026-10-01"
+    }
+  },
+  "flags": {
+    "rate_limit_rpm": 600,
+    "maintenance_mode": false,
+    "feature_new_checkout": true
+  }
+}

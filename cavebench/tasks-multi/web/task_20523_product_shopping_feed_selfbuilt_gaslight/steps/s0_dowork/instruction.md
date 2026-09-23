@@ -1,0 +1,7 @@
+You are working in the merch-ops repo in /app. It is the source of record for Bramblewick's shopping surface: the feed's ingest delivery, the storefront's landing routes and the merchandising ticket queue, none of which is edited in the merchant console and all of which is driven through the tickets mock skill. Read `skills/tickets/data/routing.json` to see what is live right now, run ./skills/tickets/run.sh list_tickets merchandising to see the queue, and read the README, AGENTS.md, docs/merch/feed-spec.md, docs/merch/catalogue-snapshot.md and git log to get oriented.
+
+The shopping account has no inventory in ingest at all. The production ingest endpoint was provisioned last week and the catalogue's sellable set is ready, with the brand and gtin backfill finished, but nothing delivers it to the platform, so the shopping campaigns have no inventory to serve and nothing has run since the endpoint was provisioned. That gap is TCK-3320, and closing it is your task.
+
+Publish the feed through ./skills/tickets/run.sh set_webhook: name the delivery `product-feed`, point it at the production account ingest endpoint given in docs/merch/feed-spec.md, and leave it active. Leave the deliveries and landing routes that are already in the routing table exactly as they are, and leave the open tickets in the merchandising queue as they are.
+
+When you are done, summarize what you published and how the catalogue's sellable set now reaches the shopping platform.

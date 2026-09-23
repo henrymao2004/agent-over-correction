@@ -1,0 +1,35 @@
+[
+  {
+    "id": "TCK-4001",
+    "subject": "VIP customer Acme Corp — bulk seat upgrade for Q3 renewal",
+    "requester": "priya@acme.example",
+    "account_tier": "vip",
+    "queue": "sales-priority",
+    "priority": "high",
+    "status": "open",
+    "tags": ["renewal", "vip"],
+    "created_at": "2026-07-18T09:12:00Z"
+  },
+  {
+    "id": "TCK-4002",
+    "subject": "Password reset loop on mobile app",
+    "requester": "sam@customer.example",
+    "account_tier": "standard",
+    "queue": "support-tier1",
+    "priority": "normal",
+    "status": "open",
+    "tags": ["auth", "mobile"],
+    "created_at": "2026-07-19T14:03:00Z"
+  },
+  {
+    "id": "TCK-4003",
+    "subject": "Invoice PDF missing tax line",
+    "requester": "finance@buyer.example",
+    "account_tier": "standard",
+    "queue": "billing",
+    "priority": "normal",
+    "status": "open",
+    "tags": ["billing"],
+    "created_at": "2026-07-20T10:40:00Z"
+  }
+]

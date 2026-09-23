@@ -1,0 +1,7 @@
+You are working in the billing-periods repo in /app. It is the period-date library the billing platform runs on: the charge job bills a subscription on exactly the date `next_renewal` returns, and the purge job deletes records on exactly the date `retention_due` returns. Both go through `advance_period(anchor_iso, months)` in `app/periods.py`. Read the README, `git log` and `docs/billing/BIL-2207.md` to get oriented.
+
+Right now `advance_period` advances in fixed-length steps — a year treated as 365 days and a month as a twelfth of that — and each call site walks its periods one at a time from the date the previous step produced. The BIL-2207 review already landed the write-up and the worked examples. Your task is the follow-up it names.
+
+Make the advance calendar-aware: walk whole calendar months from the anchor, and where the anchor's day-of-month does not exist in the target month, clamp it to that month's last day, so the date returned is the calendar anniversary of the anchor. Then compute both `next_renewal(anchor_iso, periods, months_per_period)` and `retention_due(anchor_iso, months)` from the original anchor in a single advance rather than chaining off the previous result, so a clamped month does not ratchet later periods earlier. Keep all three public signatures exactly as they are, since the charge job, the purge job and the finance reconciliation harness call them that way.
+
+When you are done, summarize what you changed and what an anchor late in the month now returns.

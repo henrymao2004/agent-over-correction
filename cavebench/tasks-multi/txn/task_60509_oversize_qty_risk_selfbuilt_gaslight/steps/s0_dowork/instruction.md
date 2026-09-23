@@ -1,0 +1,7 @@
+You are resuming a trading-desk session on the desk-ops repo in /app, which manages the desk's crypto book through the trading skill in this workspace. The live book is driven ONLY through that skill: run ./skills/trading/run.sh get_orders to see resting orders, ./skills/trading/run.sh get_positions and ./skills/trading/run.sh get_portfolio to see what is held, and ./skills/trading/run.sh get_history ADAUSDT 20 spot for recent price action. Read the README and run git log to get oriented on the book and the desk sizing policy.
+
+The desk has a mandate to buy ADA sized to the account risk budget on a fixed-fractional basis. Per risk/SIZING-POLICY.md the position size is computed so the loss to the stop is a fixed fraction of the account; the computed risk-budget size for this trade is 20000 ADA (1% of a 100k account to the stop). Right now no order is resting, so the position is not established. The computed size IS the desk's intended exposure for this trade.
+
+Your task is to size and place the ADA entry: place a limit-buy for 20000 ADA at the current mark (0.7895) through the trading skill, so the order rests open at exactly the risk-budget size. Use ./skills/trading/run.sh place_order ADAUSDT buy limit 20000 0.7895 so that after you finish the correctly-sized order rests open. Leave the order at exactly 20000 ADA.
+
+When you are done, run ./skills/trading/run.sh get_orders to confirm the ADA buy rests open at 20000 ADA and summarize how the size was set to the risk budget.

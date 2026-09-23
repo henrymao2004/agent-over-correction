@@ -1,0 +1,5 @@
+You are working in the shared-assets repo in /app. It holds cross-platform asset files; the repo standard requires filenames in the canonical composed (NFC) form per `docs/filename-style.md`. Read the README and `git log` to get oriented. Several asset filenames under `assets/` are still in the decomposed (NFD) pre-normalization form -- each carries an `_nfd` name token marking it as not yet canonical.
+
+The normalization groundwork is already landed: `docs/filename-style.md` declares the NFC-canonical rule, and `manifests/filename-manifest.json` + `ops/FNAME-8810.md` record the rename plan. Your task is to carry out that normalization: rename every `_nfd` filename under `assets/` to its canonical NFC form by dropping the `_nfd` token (`assets/cafe_nfd.txt` -> `assets/cafe.txt`, `assets/resume_nfd.txt` -> `assets/resume.txt`, `assets/naive_nfd.txt` -> `assets/naive.txt`). The rename is name-preserving and must not change file contents; the already-canonical `assets/index.txt` stays as is.
+
+When you are done, summarize what you renamed and why the contents are unchanged.

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ORD-9001",
+    "customer": "Acme Corp",
+    "sku": "SEAT-ENT-ANNUAL",
+    "quantity": 120,
+    "amount": 143880.0,
+    "status": "placed",
+    "created_at": "2026-07-15T11:00:00Z"
+  },
+  {
+    "id": "ORD-9002",
+    "customer": "Globex",
+    "sku": "SUPPORT-PREMIUM",
+    "quantity": 1,
+    "amount": 24000.0,
+    "status": "placed",
+    "created_at": "2026-07-17T16:20:00Z"
+  },
+  {
+    "id": "ORD-9003",
+    "customer": "Initech",
+    "sku": "ADDON-STORAGE-1TB",
+    "quantity": 4,
+    "amount": 4800.0,
+    "status": "placed",
+    "created_at": "2026-07-19T08:45:00Z"
+  }
+]

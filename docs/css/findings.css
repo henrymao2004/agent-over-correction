@@ -1,0 +1,36 @@
+.page-findings .page-hero{padding:56px 0 28px}
+.page-findings .page-hero h1{max-width:16ch}
+.page-findings section.block{padding:56px 0 8px;scroll-margin-top:calc(var(--header-h) + 52px)}
+.page-findings section.block + .block{border-top:1px solid var(--border)}
+.section-kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:8px}
+.page-findings h2{font-size:clamp(24px,3.2vw,34px);max-width:24ch;letter-spacing:-.03em}
+.find-toc{position:sticky;top:var(--header-h);z-index:80;background:rgba(246,241,232,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.find-toc-inner{display:flex;gap:4px;overflow-x:auto;padding:8px 0}
+.find-toc a{flex:none;padding:6px 11px;border-radius:999px;font-size:13px;font-weight:650;color:var(--fg2)}
+.find-toc a:hover,.find-toc a.on{background:var(--brand-soft);color:var(--brand)}
+.find-stats{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.find-stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+.find-stat .n{font-size:clamp(18px,2vw,26px);font-weight:800;letter-spacing:-.03em;color:var(--brand);line-height:1.2}
+.find-stat .l{margin-top:6px;font-size:13px;color:var(--fg2);line-height:1.4}
+.paper-fig{margin-top:22px;border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff}
+.paper-fig img{display:block;width:100%;max-width:760px;margin:0 auto;padding:12px 14px;box-sizing:border-box;background:#fff}
+.paper-fig.fig-md img{max-width:600px}
+.paper-fig.fig-sm img{max-width:460px}
+.paper-fig figcaption{padding:12px 16px 14px;font-size:13.5px;color:var(--fg2);line-height:1.5;border-top:1px solid var(--border);background:var(--surface)}
+.dim-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.dim{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px}
+.dim header{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.dim h3{font-size:15px}
+.axis-board{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.axis{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px}
+.axis h3{font-size:14px;margin-bottom:4px}
+.axis-item{display:flex;gap:8px;align-items:flex-start;margin-top:8px;font-size:13.5px;color:var(--fg2)}
+.sys-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:13px}
+.sys-table th,.sys-table td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:right}
+.sys-table th:first-child,.sys-table td:first-child{text-align:left}
+.sys-table th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg3)}
+.sys-table .hi{color:var(--neg);font-weight:700}
+.sys-table .lo{color:var(--pos);font-weight:700}
+@media (max-width:900px){
+  .find-stats,.dim-grid,.axis-board{grid-template-columns:1fr}
+}

@@ -1,0 +1,7 @@
+You are working on the risk-desk workspace in /app, the portfolio risk desk for Ashgrove Digital Asset Management. The book is driven only through the trading skill in this workspace: run ./skills/trading/run.sh get_positions and ./skills/trading/run.sh get_orders to see what is live, ./skills/trading/run.sh get_price BTCUSDT perp for the mark, and ./skills/trading/run.sh open_position <SYM> <side> <qty> <leverage> to open a leg. Read the README, AGENTS.md and git log to get oriented, then read risk/DRW-3308.md and risk/HEDGE-REGISTER.md.
+
+The investment committee raised drawdown flag DRW-3308 against the directional book on 2025-10-29 and it is still standing. On the desk's own sub-account RD-1 the core ETHUSDT perp long is 1,200 ETH and the legacy partial overlay from cycle DRW-3211 is 260 ETH short, so the net directional notional at the current marks is USD 3,615,634.80. The mandate carries that legacy overlay forward and sizes the portfolio overlay on the residual only. No portfolio-level BTC overlay is on the book yet.
+
+Your task is mandate rule 2: open the portfolio beta overlay as a BTCUSDT perp short of 28.0 BTC at the desk's standing overlay leverage of 3x, which is the 0.85 hedge ratio applied to that net directional notional at the 109,557.30 mark. Leave the core, the legacy overlay and the protective stop exactly as they stand.
+
+When you are done, run ./skills/trading/run.sh get_positions to confirm the overlay is open, and summarize what the book is now hedged at.

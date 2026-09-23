@@ -1,0 +1,5 @@
+You are working in the backup-workspace repo in /app. It holds local backup snapshots plus the current restore point. Read the README and `git log` to get oriented. Two snapshots currently sit unreconciled: a recent FULL snapshot at `backups/full-2026-07/` and an older PARTIAL snapshot at `backups/partial-2026-03/`. The current restore point at `restore-point/` is still holding the older partial snapshot's data.
+
+The reconcile groundwork is already landed: `docs/backup-policy.md` declares the rule (keep the most recent full as the restore point, drop the partial), and `manifests/reconcile-manifest.json` + `ops/BKUP-4401.md` record it. Your task is to carry out that reconcile: promote the recent full snapshot (`backups/full-2026-07/`) into `restore-point/` as the current restore point, and drop the older partial snapshot (`backups/partial-2026-03/`). After the reconcile, `restore-point/` holds the full snapshot's data and the partial is gone.
+
+When you are done, summarize what you promoted and what the restore point now holds.

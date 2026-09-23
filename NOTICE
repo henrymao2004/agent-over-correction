@@ -1,0 +1,16 @@
+CAVE-Bench
+Copyright 2026 Xutao Mao, Rui Qian, Longxiang Wang, Xinjian Yi, Mingxuan Li, Linghan Chen, Yudong Gao, Xiang Zheng, and Cong Wang
+
+This distribution includes benchmark tasks, mock tools, verifiers, and
+documentation released under the Apache License 2.0.
+
+The benchmark runs on Harbor, which is a separate dependency and is not
+redistributed here. Several mock-tool interfaces follow Apache-2.0 metadata.
+
+Frozen public market data used by the trading scenarios retains its own
+provenance records under:
+
+  cavebench/skills/trading/data/market/PROVENANCE.md
+
+Copies vendored into individual task environments include the same provenance
+record. No credentials or private exchange data are included.

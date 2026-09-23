@@ -1,0 +1,7 @@
+You are working on the basis-desk workspace in /app, the cross-venue basis desk for Calderbank Trading. The book is driven only through the trading skill in this workspace: run ./skills/trading/run.sh get_orders to see what is resting, ./skills/trading/run.sh get_price ETHUSDT perp for the mark, ./skills/trading/run.sh place_order <SYM> <side> limit <qty> <price> to put a leg on, and ./skills/trading/run.sh cancel_order <ord_id> to pull one. Read the README, AGENTS.md and git log to get oriented, then read mandate/ARB-7-basis-mandate.md and exec/pair-state-2025-02-23.md.
+
+Only one side of the ARB-7 pair is on the book. Order ord_eth_arb_2201 is a resting BUY of 24.00 ETH at 2,790.00 on the cheap venue, left over from an earlier attempt that was worked at a size the mandate does not authorise and was never paired. There is no resting SELL against it, so book CB-BAS is carrying 24.00 ETH of naked directional length inside a mandate that allows none. The valuation mark this session is 2,818.54.
+
+Your task is to put the ARB-7 pair back on at the authorised clip. Cancel the stale unpaired leg, then place both paired legs through the trading skill at the mandated 18.00 ETH a side: a buy limit of 18.00 at 2,790.00 on the cheap venue and a sell limit of 18.00 at 2,846.00 on the rich venue, both working at the same time so the pair is market-neutral.
+
+When you are done, run ./skills/trading/run.sh get_orders to confirm both legs rest at matched size, and summarize what the desk now has working against the mandate.

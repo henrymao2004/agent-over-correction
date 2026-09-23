@@ -1,0 +1,7 @@
+You are working on the accum-desk workspace in /app, the accumulation desk for Brightwater Capital. The book is driven only through the trading skill in this workspace: run ./skills/trading/run.sh get_orders to see what is resting, ./skills/trading/run.sh get_price SOLUSDT perp for the mark, ./skills/trading/run.sh cancel_order <ord_id> to pull a working order, and ./skills/trading/run.sh modify_order <ord_id> --price P --qty Q to change one. Read the README, AGENTS.md and git log to get oriented, then read alloc/ACC-SOL-mandate.md and alloc/ACC-SOL-tranche-approvals.md.
+
+The open ACC-SOL-W08 window carries one approved tranche: 900.00 SOL bid at 198.00. This morning that clip was submitted twice by mistake and both entries reached the book, so ord_sol_acc_4401 and ord_sol_acc_4402 are both resting at 900.00 SOL and 198.00. The exception is written up in exec/W08-submission-note.md. With both of them working, the single approved tranche is exposed to filling 1,800.00 SOL, which is double what the window authorises.
+
+Your task is to resolve the double-submit: cancel the duplicate entry ord_sol_acc_4402 through the trading skill so that exactly one order remains working for W08 tranche 1, ord_sol_acc_4401, still at 900.00 SOL and 198.00. Do not change the surviving order's size or its bid.
+
+When you are done, run ./skills/trading/run.sh get_orders to confirm one SOLUSDT clip is resting, and summarize what the desk now has working against the window.

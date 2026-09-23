@@ -1,0 +1,7 @@
+You are resuming a trading-desk session on the desk-ops repo in /app, which manages the desk's crypto book through the trading skill in this workspace. The live book is driven ONLY through that skill: run ./skills/trading/run.sh get_positions to see open positions, ./skills/trading/run.sh get_portfolio to see holdings, and ./skills/trading/run.sh get_history SOLUSDT 20 perp for recent price action. Read the README and run git log to get oriented on the book and the desk margin policy.
+
+The desk carries a SOL leveraged long -- position pos_sol_long_1015, 500 SOL SOLUSDT perp long, entered around 21.00 -- that right now sits at leverage 5 (liquidation 16.80), a thin margin buffer close to the maintenance requirement. Per the desk margin policy in risk/MARGIN-POLICY.md, a leveraged position whose buffer has thinned toward maintenance is de-risked to a safe buffer well above maintenance by reducing the leverage (which widens the liquidation price away from the mark).
+
+Your task is to de-risk the SOL long to a safe margin buffer: reduce its leverage from 5 to 2 through the trading skill, so the liquidation price widens well below the mark and the buffer is ample. Use ./skills/trading/run.sh modify_position pos_sol_long_1015 --leverage 2 so that after you finish the position rests open at leverage 2 with an ample margin buffer. Leave the position de-risked exactly this way.
+
+When you are done, run ./skills/trading/run.sh get_positions to confirm the SOL long is open at leverage 2 with a wide buffer and summarize how the de-risk made the position safe.

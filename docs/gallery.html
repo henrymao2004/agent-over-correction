@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — CAVE-Bench trajectories</title>
+  <meta name="description" content="Replay CAVE-Bench from the agent's perspective: context, tool calls, observations, and recorded evaluations.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/experience.css?v=case-red-2">
+</head>
+<body class="page-gallery">
+  <div class="panels">
+    <aside class="panel-left" id="panelLeft">
+      <div class="panel-h">
+        <h1>CAVE gallery</h1>
+      </div>
+      <div class="audit-stats" id="auditStats"></div>
+      <div class="dir-filters" id="dirFilters">
+        <button class="dir-filter on" data-filter="all">All</button>
+        <button class="dir-filter" data-filter="harm">Damaged</button>
+        <button class="dir-filter" data-filter="hold">Held</button>
+      </div>
+      <div class="dir-search"><select id="familyFilter" aria-label="Task family"><option value="all">All task families</option><option value="inherit">Inherited-resume</option><option value="selfbuilt">Self-built</option></select></div>
+      <div class="dir-search">
+        <input type="search" id="directorySearch" placeholder="Search models or tasks…" autocomplete="off">
+      </div>
+      <div class="directory" id="directoryList"></div>
+    </aside>
+    <main class="panel-center" id="panelCenter">
+      <div class="center-empty" id="centerEmpty">
+        <h3>Pick a run</h3>
+      </div>
+      <div class="center-content" id="centerContent">
+        <div class="case-header" id="caseHeader"></div>
+        <div class="chapter-nav" id="chapters" aria-label="Recorded stages"></div>
+        <div class="doc-toolbar">
+          <div class="ev-filters" id="evidenceFilter">
+            <button type="button" class="ev-btn on" data-span-filter="all">All</button>
+            <button type="button" class="ev-btn" data-span-filter="input">Inputs</button>
+            <button type="button" class="ev-btn" data-span-filter="tools">Tools</button>
+            <button type="button" class="ev-btn" data-span-filter="judge">Evaluation</button>
+          </div>
+          <div class="view-switch" id="viewSwitcher">
+            <button class="view-btn on" data-view="excerpts">Highlights</button>
+            <button class="view-btn" data-view="full">Full trajectory</button>
+          </div>
+        </div>
+        <div class="doc" id="doc">
+          <section class="essentials" id="essentials" aria-label="Case essentials"></section>
+          <div class="agent-path" id="agentPath"></div>
+          <div class="playback" id="playback">
+            <button class="icon-btn" id="restart" title="Restart" aria-label="Restart"><i data-lucide="rotate-ccw"></i></button>
+            <button class="icon-btn" id="previous" title="Previous event" aria-label="Previous event"><i data-lucide="skip-back"></i></button>
+            <button class="icon-btn primary" id="play" title="Play" aria-label="Play"><i data-lucide="play"></i></button>
+            <button class="icon-btn" id="next" title="Next event" aria-label="Next event"><i data-lucide="skip-forward"></i></button>
+            <span id="position" class="position"></span>
+            <select id="speed" aria-label="Playback speed"><option value="3200">0.5x</option><option value="1600" selected>1x</option><option value="800">2x</option></select>
+            <button class="icon-btn" id="download" title="Download recorded case" aria-label="Download recorded case"><i data-lucide="download"></i></button>
+            <input id="scrubber" type="range" min="0" max="0" value="0" aria-label="Event position">
+          </div>
+          <div id="eventFocus" class="event-focus" aria-live="polite"></div>
+          <div class="timeline-heading"><h2>Event timeline</h2><span id="eventCount"></span></div>
+          <ol id="eventList" class="event-list"></ol>
+        </div>
+      </div>
+    </main>
+    <aside class="panel-right" id="panelRight">
+      <div class="panel-h">
+        <h2>Evidence inspector</h2>
+      </div>
+      <div class="notes" id="notes">
+        <div class="notes-empty">No event selected.</div>
+      </div>
+    </aside>
+  </div>
+  <nav class="mobile-tabs" id="mobileTabs">
+    <button class="on" data-panel="left">Models</button>
+    <button data-panel="center">Run</button>
+    <button data-panel="right">Evidence</button>
+  </nav>
+  <script src="js/design.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/lucide.min.js"></script>
+  <script src="js/experience.js?v=8dc9677"></script>
+  <script src="js/experience-view.js?v=case-red-2"></script>
+</body>
+</html>

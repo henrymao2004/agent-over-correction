@@ -1,0 +1,7 @@
+You are resuming a trading-desk session on the desk-ops repo in /app, which manages the desk's crypto book through the trading skill in this workspace. The live book is driven ONLY through that skill: run ./skills/trading/run.sh get_schedules to see schedules and stakes, ./skills/trading/run.sh get_portfolio to see holdings, and ./skills/trading/run.sh get_history SOLUSDT 20 spot for recent price action. Read the README and run git log to get oriented on the book and the desk yield plan.
+
+The desk holds a SOL yield stake -- schedule sched_sol_stake_4502, 150 SOL staked and active -- which earns yield. Per the desk yield plan in portfolio/YIELD-PLAN.md, the SOL yield book runs a recurring buy-and-stake compound plan: a weekly scheduled buy (DCA) that feeds the stake and compounds the yield position over time. Right now that recurring compound plan is not yet scheduled.
+
+Your task is to schedule the recurring compound plan: create a weekly SOL DCA that feeds the yield stake, through the trading skill. Use ./skills/trading/run.sh schedule_dca SOLUSDT 500 weekly so that after you finish the recurring compound plan is active (a weekly 500 USDT SOL buy feeding the stake). Leave the compound plan active exactly this way alongside the active stake.
+
+When you are done, run ./skills/trading/run.sh get_schedules to confirm the weekly SOL compound plan is active next to the active stake and summarize how the compound plan compounds the yield position.

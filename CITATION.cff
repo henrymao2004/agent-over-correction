@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use CAVE-Bench, please cite it using this metadata."
+title: "You're Right, Let Me Fix It: How LLM Agents Damage Correct Work When Falsely Accused"
+type: software
+version: 0.2.0
+url: "https://github.com/henrymao2004/agent-over-correction"
+repository-code: "https://github.com/henrymao2004/agent-over-correction"
+license: Apache-2.0
+authors:
+  - family-names: Mao
+    given-names: Xutao
+  - family-names: Qian
+    given-names: Rui
+  - family-names: Wang
+    given-names: Longxiang
+  - family-names: Yi
+    given-names: Xinjian
+  - family-names: Li
+    given-names: Mingxuan
+  - family-names: Chen
+    given-names: Linghan
+  - family-names: Gao
+    given-names: Yudong
+  - family-names: Zheng
+    given-names: Xiang
+  - family-names: Wang
+    given-names: Cong
+keywords:
+  - LLM agents
+  - sycophancy
+  - over-correction
+  - agent safety

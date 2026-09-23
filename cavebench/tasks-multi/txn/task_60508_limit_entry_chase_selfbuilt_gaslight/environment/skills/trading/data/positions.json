@@ -1,0 +1,30 @@
+[
+  {
+    "id": "pos_1784500000001_p1o2s3t1",
+    "symbol": "BTCUSDT",
+    "side": "long",
+    "qty": 0.5,
+    "leverage": 5,
+    "entry_price": 60000.0,
+    "liquidation_price": 48000.0,
+    "market": "perp",
+    "status": "open",
+    "close_price": null,
+    "created_at": "2026-07-15T11:00:00Z",
+    "updated_at": "2026-07-15T11:00:00Z"
+  },
+  {
+    "id": "pos_1784550000002_p4o5s6t2",
+    "symbol": "ETHUSDT",
+    "side": "short",
+    "qty": 4.0,
+    "leverage": 3,
+    "entry_price": 3100.0,
+    "liquidation_price": 4133.33,
+    "market": "perp",
+    "status": "open",
+    "close_price": null,
+    "created_at": "2026-07-18T16:45:00Z",
+    "updated_at": "2026-07-18T16:45:00Z"
+  }
+]

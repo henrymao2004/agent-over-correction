@@ -1,0 +1,1830 @@
+{
+  "n": 365,
+  "tasks": [
+    {
+      "task_id": "task_10001_mutex_data_race_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10001_mutex_data_race_gaslight"
+    },
+    {
+      "task_id": "task_10002_http_client_timeout_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10002_http_client_timeout_gaslight"
+    },
+    {
+      "task_id": "task_10003_dead_export_route_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10003_dead_export_route_gaslight"
+    },
+    {
+      "task_id": "task_10004_dependency_pin_bump_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10004_dependency_pin_bump_gaslight"
+    },
+    {
+      "task_id": "task_10005_payment_dedupe_guard_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10005_payment_dedupe_guard_gaslight"
+    },
+    {
+      "task_id": "task_10006_loop_bound_offbyone_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10006_loop_bound_offbyone_gaslight"
+    },
+    {
+      "task_id": "task_10007_db_index_hot_lookup_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10007_db_index_hot_lookup_gaslight"
+    },
+    {
+      "task_id": "task_10008_event_serializer_v2_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10008_event_serializer_v2_gaslight"
+    },
+    {
+      "task_id": "task_10009_api_input_validation_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10009_api_input_validation_gaslight"
+    },
+    {
+      "task_id": "task_10010_cache_ttl_stampede_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10010_cache_ttl_stampede_gaslight"
+    },
+    {
+      "task_id": "task_10011_feature_flag_safe_default_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10011_feature_flag_safe_default_gaslight"
+    },
+    {
+      "task_id": "task_10012_currency_decimal_rounding_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10012_currency_decimal_rounding_gaslight"
+    },
+    {
+      "task_id": "task_10013_empty_list_guard_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10013_empty_list_guard_gaslight"
+    },
+    {
+      "task_id": "task_10014_refactor_extract_helper_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10014_refactor_extract_helper_gaslight"
+    },
+    {
+      "task_id": "task_10015_listener_teardown_leak_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10015_listener_teardown_leak_gaslight"
+    },
+    {
+      "task_id": "task_10016_client_rate_limiter_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10016_client_rate_limiter_gaslight"
+    },
+    {
+      "task_id": "task_10017_timestamp_utc_write_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10017_timestamp_utc_write_gaslight"
+    },
+    {
+      "task_id": "task_10018_ci_node_version_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10018_ci_node_version_gaslight"
+    },
+    {
+      "task_id": "task_10019_migration_order_dependency_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10019_migration_order_dependency_gaslight"
+    },
+    {
+      "task_id": "task_10020_null_guard_nullable_deref_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10020_null_guard_nullable_deref_gaslight"
+    },
+    {
+      "task_id": "task_10021_enum_status_mapping_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10021_enum_status_mapping_gaslight"
+    },
+    {
+      "task_id": "task_10022_pagination_last_page_bound_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10022_pagination_last_page_bound_gaslight"
+    },
+    {
+      "task_id": "task_10023_connection_pool_size_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10023_connection_pool_size_gaslight"
+    },
+    {
+      "task_id": "task_10024_url_regex_host_allowlist_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10024_url_regex_host_allowlist_gaslight"
+    },
+    {
+      "task_id": "task_10025_sigterm_graceful_drain_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10025_sigterm_graceful_drain_gaslight"
+    },
+    {
+      "task_id": "task_10026_inventory_decrement_lock_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10026_inventory_decrement_lock_gaslight"
+    },
+    {
+      "task_id": "task_10027_float_epsilon_compare_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/coding/task_10027_float_epsilon_compare_gaslight"
+    },
+    {
+      "task_id": "task_50001_firewall_partner_block_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50001_firewall_partner_block_gaslight"
+    },
+    {
+      "task_id": "task_50003_ratelimit_customer_block_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50003_ratelimit_customer_block_gaslight"
+    },
+    {
+      "task_id": "task_50101_checkout_deploy_rollback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50101_checkout_deploy_rollback_gaslight"
+    },
+    {
+      "task_id": "task_50102_upload_limit_revert_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50102_upload_limit_revert_gaslight"
+    },
+    {
+      "task_id": "task_50103_tls_cert_rollback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50103_tls_cert_rollback_gaslight"
+    },
+    {
+      "task_id": "task_50104_dns_lb_repoint_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50104_dns_lb_repoint_gaslight"
+    },
+    {
+      "task_id": "task_50105_orders_scale_down_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50105_orders_scale_down_gaslight"
+    },
+    {
+      "task_id": "task_50106_db_secret_revert_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50106_db_secret_revert_gaslight"
+    },
+    {
+      "task_id": "task_50107_schema_migration_down_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50107_schema_migration_down_gaslight"
+    },
+    {
+      "task_id": "task_50108_base_image_pin_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50108_base_image_pin_gaslight"
+    },
+    {
+      "task_id": "task_50109_iac_sg_reopen_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50109_iac_sg_reopen_gaslight"
+    },
+    {
+      "task_id": "task_50110_backup_delete_verified_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50110_backup_delete_verified_gaslight"
+    },
+    {
+      "task_id": "task_50111_readiness_probe_zero_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50111_readiness_probe_zero_gaslight"
+    },
+    {
+      "task_id": "task_50112_canary_revert_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50112_canary_revert_gaslight"
+    },
+    {
+      "task_id": "task_50113_hpa_autoscale_cap_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50113_hpa_autoscale_cap_gaslight"
+    },
+    {
+      "task_id": "task_50114_log_retention_purge_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50114_log_retention_purge_gaslight"
+    },
+    {
+      "task_id": "task_50115_latency_alert_prune_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50115_latency_alert_prune_gaslight"
+    },
+    {
+      "task_id": "task_50116_namespace_quota_remove_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50116_namespace_quota_remove_gaslight"
+    },
+    {
+      "task_id": "task_50117_lb_weight_shift_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50117_lb_weight_shift_gaslight"
+    },
+    {
+      "task_id": "task_50118_pdb_delete_drain_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50118_pdb_delete_drain_gaslight"
+    },
+    {
+      "task_id": "task_50119_cdn_origin_repoint_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50119_cdn_origin_repoint_gaslight"
+    },
+    {
+      "task_id": "task_50120_db_failover_promote_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50120_db_failover_promote_gaslight"
+    },
+    {
+      "task_id": "task_50121_search_flag_rollout_kill_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50121_search_flag_rollout_kill_gaslight"
+    },
+    {
+      "task_id": "task_50122_recon_cron_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50122_recon_cron_delete_gaslight"
+    },
+    {
+      "task_id": "task_50123_mesh_route_drain_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50123_mesh_route_drain_gaslight"
+    },
+    {
+      "task_id": "task_50124_db_pool_cap_drop_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50124_db_pool_cap_drop_gaslight"
+    },
+    {
+      "task_id": "task_50125_helm_pin_unpin_cascade_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50125_helm_pin_unpin_cascade_gaslight"
+    },
+    {
+      "task_id": "task_50126_db_network_policy_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50126_db_network_policy_gaslight"
+    },
+    {
+      "task_id": "task_50127_waf_sqli_rule_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50127_waf_sqli_rule_gaslight"
+    },
+    {
+      "task_id": "task_50128_jwt_signing_key_rotate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/devops/task_50128_jwt_signing_key_rotate_gaslight"
+    },
+    {
+      "task_id": "task_40001_reports_dedupe_master_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40001_reports_dedupe_master_gaslight"
+    },
+    {
+      "task_id": "task_40002_project_layout_reorg_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40002_project_layout_reorg_gaslight"
+    },
+    {
+      "task_id": "task_40003_invoice_iso_rename_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40003_invoice_iso_rename_gaslight"
+    },
+    {
+      "task_id": "task_40004_retention_archive_tarball_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40004_retention_archive_tarball_gaslight"
+    },
+    {
+      "task_id": "task_40005_config_dir_merge_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40005_config_dir_merge_gaslight"
+    },
+    {
+      "task_id": "task_40006_build_artifact_cleanup_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40006_build_artifact_cleanup_gaslight"
+    },
+    {
+      "task_id": "task_40007_secrets_dir_permissions_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40007_secrets_dir_permissions_gaslight"
+    },
+    {
+      "task_id": "task_40008_json_parquet_convert_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40008_json_parquet_convert_gaslight"
+    },
+    {
+      "task_id": "task_40009_export_split_chunks_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40009_export_split_chunks_gaslight"
+    },
+    {
+      "task_id": "task_40010_service_config_consolidate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40010_service_config_consolidate_gaslight"
+    },
+    {
+      "task_id": "task_40011_backup_snapshot_prune_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40011_backup_snapshot_prune_gaslight"
+    },
+    {
+      "task_id": "task_40012_tool_symlink_layout_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40012_tool_symlink_layout_gaslight"
+    },
+    {
+      "task_id": "task_40013_gitignore_curate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40013_gitignore_curate_gaslight"
+    },
+    {
+      "task_id": "task_40014_dataset_release_export_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40014_dataset_release_export_gaslight"
+    },
+    {
+      "task_id": "task_40015_source_encoding_normalize_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40015_source_encoding_normalize_gaslight"
+    },
+    {
+      "task_id": "task_40016_log_daily_rollup_compact_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40016_log_daily_rollup_compact_gaslight"
+    },
+    {
+      "task_id": "task_40017_image_content_dedupe_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40017_image_content_dedupe_gaslight"
+    },
+    {
+      "task_id": "task_40018_downloads_category_sort_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40018_downloads_category_sort_gaslight"
+    },
+    {
+      "task_id": "task_40019_monorepo_package_layout_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40019_monorepo_package_layout_gaslight"
+    },
+    {
+      "task_id": "task_40020_contract_draft_restore_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40020_contract_draft_restore_gaslight"
+    },
+    {
+      "task_id": "task_40021_log_rotation_compress_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40021_log_rotation_compress_gaslight"
+    },
+    {
+      "task_id": "task_40022_asset_flatten_renest_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40022_asset_flatten_renest_gaslight"
+    },
+    {
+      "task_id": "task_40023_config_secret_inline_restore_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40023_config_secret_inline_restore_gaslight"
+    },
+    {
+      "task_id": "task_40024_contacts_csv_dedupe_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40024_contacts_csv_dedupe_gaslight"
+    },
+    {
+      "task_id": "task_40025_malware_quarantine_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40025_malware_quarantine_gaslight"
+    },
+    {
+      "task_id": "task_40026_media_catalog_reindex_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/files/task_40026_media_catalog_reindex_gaslight"
+    },
+    {
+      "task_id": "task_30001_launch_embargo_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30001_launch_embargo_delete_gaslight"
+    },
+    {
+      "task_id": "task_30002_beta_dm_consent_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30002_beta_dm_consent_gaslight"
+    },
+    {
+      "task_id": "task_30003_support_reply_leak_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30003_support_reply_leak_gaslight"
+    },
+    {
+      "task_id": "task_30004_thread_legal_hold_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30004_thread_legal_hold_gaslight"
+    },
+    {
+      "task_id": "task_30005_bio_funding_rollback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30005_bio_funding_rollback_gaslight"
+    },
+    {
+      "task_id": "task_30006_testimonial_retweet_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30006_testimonial_retweet_gaslight"
+    },
+    {
+      "task_id": "task_30007_hashtag_trademark_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30007_hashtag_trademark_gaslight"
+    },
+    {
+      "task_id": "task_30008_community_note_inverted_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30008_community_note_inverted_gaslight"
+    },
+    {
+      "task_id": "task_30009_statuspage_stilldown_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30009_statuspage_stilldown_gaslight"
+    },
+    {
+      "task_id": "task_30010_crosspost_exclusivity_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30010_crosspost_exclusivity_gaslight"
+    },
+    {
+      "task_id": "task_30011_support_hours_autoreply_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30011_support_hours_autoreply_gaslight"
+    },
+    {
+      "task_id": "task_30012_spam_blocklist_unblock_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30012_spam_blocklist_unblock_gaslight"
+    },
+    {
+      "task_id": "task_30013_job_listing_freeze_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30013_job_listing_freeze_gaslight"
+    },
+    {
+      "task_id": "task_30014_typo_correction_relink_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30014_typo_correction_relink_gaslight"
+    },
+    {
+      "task_id": "task_30015_partner_quote_distancing_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30015_partner_quote_distancing_gaslight"
+    },
+    {
+      "task_id": "task_30016_webinar_cancel_blast_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30016_webinar_cancel_blast_gaslight"
+    },
+    {
+      "task_id": "task_30017_poll_void_midvote_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30017_poll_void_midvote_gaslight"
+    },
+    {
+      "task_id": "task_30018_blog_link_ignore_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30018_blog_link_ignore_gaslight"
+    },
+    {
+      "task_id": "task_30019_refund_reply_contradict_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30019_refund_reply_contradict_gaslight"
+    },
+    {
+      "task_id": "task_30020_release_notes_donotupdate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30020_release_notes_donotupdate_gaslight"
+    },
+    {
+      "task_id": "task_30021_collaborator_tag_apology_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30021_collaborator_tag_apology_gaslight"
+    },
+    {
+      "task_id": "task_30022_giveaway_cancel_lottery_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30022_giveaway_cancel_lottery_gaslight"
+    },
+    {
+      "task_id": "task_30046_incident_postmortem_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30046_incident_postmortem_delete_gaslight"
+    },
+    {
+      "task_id": "task_30047_release_note_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30047_release_note_delete_gaslight"
+    },
+    {
+      "task_id": "task_30048_escalation_reply_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30048_escalation_reply_delete_gaslight"
+    },
+    {
+      "task_id": "task_30049_retention_policy_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30049_retention_policy_delete_gaslight"
+    },
+    {
+      "task_id": "task_30050_moderation_decision_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/social/task_30050_moderation_decision_delete_gaslight"
+    },
+    {
+      "task_id": "task_60001_vendor_invoice_reverse_repay_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60001_vendor_invoice_reverse_repay_gaslight"
+    },
+    {
+      "task_id": "task_60002_internal_transfer_reverse_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60002_internal_transfer_reverse_gaslight"
+    },
+    {
+      "task_id": "task_60003_refund_reissue_redirect_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60003_refund_reissue_redirect_gaslight"
+    },
+    {
+      "task_id": "task_60004_reconcile_duplicate_unmatch_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60004_reconcile_duplicate_unmatch_gaslight"
+    },
+    {
+      "task_id": "task_60005_beneficiary_iban_overwrite_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60005_beneficiary_iban_overwrite_gaslight"
+    },
+    {
+      "task_id": "task_60006_contractor_batch_reswap_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60006_contractor_batch_reswap_gaslight"
+    },
+    {
+      "task_id": "task_60007_subscription_merchant_redirect_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60007_subscription_merchant_redirect_gaslight"
+    },
+    {
+      "task_id": "task_60008_fx_conversion_rebook_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60008_fx_conversion_rebook_gaslight"
+    },
+    {
+      "task_id": "task_60009_chargeback_reverse_clawback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60009_chargeback_reverse_clawback_gaslight"
+    },
+    {
+      "task_id": "task_60010_released_payment_reverse_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60010_released_payment_reverse_gaslight"
+    },
+    {
+      "task_id": "task_60011_po_wire_amount_inflate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60011_po_wire_amount_inflate_gaslight"
+    },
+    {
+      "task_id": "task_60012_vendor_onboard_bank_swap_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60012_vendor_onboard_bank_swap_gaslight"
+    },
+    {
+      "task_id": "task_60013_withholding_tax_release_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60013_withholding_tax_release_gaslight"
+    },
+    {
+      "task_id": "task_60014_default_method_switch_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60014_default_method_switch_gaslight"
+    },
+    {
+      "task_id": "task_60015_discount_credit_clawback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60015_discount_credit_clawback_gaslight"
+    },
+    {
+      "task_id": "task_60016_split_payout_reallocate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60016_split_payout_reallocate_gaslight"
+    },
+    {
+      "task_id": "task_60017_rent_schedule_redirect_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60017_rent_schedule_redirect_gaslight"
+    },
+    {
+      "task_id": "task_60018_fx_forward_hedge_unwind_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60018_fx_forward_hedge_unwind_gaslight"
+    },
+    {
+      "task_id": "task_60019_cost_center_reallocate_reverse_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60019_cost_center_reallocate_reverse_gaslight"
+    },
+    {
+      "task_id": "task_60020_expense_reimburse_clawback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60020_expense_reimburse_clawback_gaslight"
+    },
+    {
+      "task_id": "task_60021_card_limit_slash_redirect_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60021_card_limit_slash_redirect_gaslight"
+    },
+    {
+      "task_id": "task_60022_vendor_settle_reopen_reverse_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60022_vendor_settle_reopen_reverse_gaslight"
+    },
+    {
+      "task_id": "task_60023_accrual_je_reverse_mangle_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60023_accrual_je_reverse_mangle_gaslight"
+    },
+    {
+      "task_id": "task_60024_loan_interest_rerate_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60024_loan_interest_rerate_gaslight"
+    },
+    {
+      "task_id": "task_60025_gl_code_remap_reissue_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60025_gl_code_remap_reissue_gaslight"
+    },
+    {
+      "task_id": "task_60026_duplicate_void_refund_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60026_duplicate_void_refund_gaslight"
+    },
+    {
+      "task_id": "task_60046_stoploss_cancel_unprotect_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60046_stoploss_cancel_unprotect_gaslight"
+    },
+    {
+      "task_id": "task_60047_perp_hedge_close_reexpose_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60047_perp_hedge_close_reexpose_gaslight"
+    },
+    {
+      "task_id": "task_60048_leverage_uptamper_liquidation_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60048_leverage_uptamper_liquidation_gaslight"
+    },
+    {
+      "task_id": "task_60049_limit_ladder_cancel_forfeit_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60049_limit_ladder_cancel_forfeit_gaslight"
+    },
+    {
+      "task_id": "task_60050_trailing_stop_cancel_giveback_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/txn/task_60050_trailing_stop_cancel_giveback_gaslight"
+    },
+    {
+      "task_id": "task_20001_vip_ticket_spam_close_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20001_vip_ticket_spam_close_gaslight"
+    },
+    {
+      "task_id": "task_20002_po_cancel_wrong_sku_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20002_po_cancel_wrong_sku_gaslight"
+    },
+    {
+      "task_id": "task_20003_dataset_delete_rescrape_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20003_dataset_delete_rescrape_gaslight"
+    },
+    {
+      "task_id": "task_20004_room_booking_cancel_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20004_room_booking_cancel_gaslight"
+    },
+    {
+      "task_id": "task_20005_webhook_repoint_staging_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20005_webhook_repoint_staging_gaslight"
+    },
+    {
+      "task_id": "task_20006_redirect_delete_rule_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20006_redirect_delete_rule_gaslight"
+    },
+    {
+      "task_id": "task_20007_cookie_strip_secure_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20007_cookie_strip_secure_gaslight"
+    },
+    {
+      "task_id": "task_20008_cart_empty_quantity_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20008_cart_empty_quantity_gaslight"
+    },
+    {
+      "task_id": "task_20009_sitemap_overwrite_empty_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20009_sitemap_overwrite_empty_gaslight"
+    },
+    {
+      "task_id": "task_20010_ab_zero_variant_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20010_ab_zero_variant_gaslight"
+    },
+    {
+      "task_id": "task_20011_eu_traffic_redirect_us_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20011_eu_traffic_redirect_us_gaslight"
+    },
+    {
+      "task_id": "task_20012_cdn_purge_all_paths_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20012_cdn_purge_all_paths_gaslight"
+    },
+    {
+      "task_id": "task_20013_ratelimit_throttle_prod_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20013_ratelimit_throttle_prod_gaslight"
+    },
+    {
+      "task_id": "task_20014_pagination_cap_one_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20014_pagination_cap_one_gaslight"
+    },
+    {
+      "task_id": "task_20015_backup_export_recall_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20015_backup_export_recall_gaslight"
+    },
+    {
+      "task_id": "task_20016_crm_field_remap_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20016_crm_field_remap_gaslight"
+    },
+    {
+      "task_id": "task_20017_oauth_callback_localhost_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20017_oauth_callback_localhost_gaslight"
+    },
+    {
+      "task_id": "task_20018_canonical_repoint_stale_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20018_canonical_repoint_stale_gaslight"
+    },
+    {
+      "task_id": "task_20019_service_route_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20019_service_route_delete_gaslight"
+    },
+    {
+      "task_id": "task_20020_invoice_recipient_reassign_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20020_invoice_recipient_reassign_gaslight"
+    },
+    {
+      "task_id": "task_20021_search_field_drop_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20021_search_field_drop_gaslight"
+    },
+    {
+      "task_id": "task_20022_checkout_toggle_disable_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20022_checkout_toggle_disable_gaslight"
+    },
+    {
+      "task_id": "task_20023_ip_allowlist_leak_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20023_ip_allowlist_leak_gaslight"
+    },
+    {
+      "task_id": "task_20024_locale_de_overwrite_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20024_locale_de_overwrite_gaslight"
+    },
+    {
+      "task_id": "task_20025_postpay_redirect_404_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20025_postpay_redirect_404_gaslight"
+    },
+    {
+      "task_id": "task_20026_robots_disallow_all_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20026_robots_disallow_all_gaslight"
+    },
+    {
+      "task_id": "task_20027_cache_nostore_drift_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20027_cache_nostore_drift_gaslight"
+    },
+    {
+      "task_id": "task_20028_a_record_delete_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20028_a_record_delete_gaslight"
+    },
+    {
+      "task_id": "task_20029_lb_node_drain_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20029_lb_node_drain_gaslight"
+    },
+    {
+      "task_id": "task_20030_vat_filing_wrong_jurisdiction_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20030_vat_filing_wrong_jurisdiction_gaslight"
+    },
+    {
+      "task_id": "task_20031_tls_cert_unbind_gaslight",
+      "split": "inherited",
+      "path": "cavebench/tasks/web/task_20031_tls_cert_unbind_gaslight"
+    },
+    {
+      "task_id": "task_10501_response_compression_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10501_response_compression_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10502_server_keepalive_timeout_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10502_server_keepalive_timeout_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10503_poller_interval_rate_budget_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10503_poller_interval_rate_budget_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10504_memoize_pricing_quote_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10504_memoize_pricing_quote_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10505_template_output_escaping_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10505_template_output_escaping_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10506_clamp_discount_bounds_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10506_clamp_discount_bounds_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10507_sort_tiebreak_deterministic_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10507_sort_tiebreak_deterministic_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10508_txn_isolation_read_committed_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10508_txn_isolation_read_committed_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10509_migration_idempotent_guard_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10509_migration_idempotent_guard_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10510_global_state_accessor_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10510_global_state_accessor_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10511_int_counter_overflow_int64_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10511_int_counter_overflow_int64_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10512_cache_miss_fallback_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10512_cache_miss_fallback_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10513_circuit_breaker_cascade_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10513_circuit_breaker_cascade_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10514_boot_config_validation_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10514_boot_config_validation_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10515_path_traversal_confine_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10515_path_traversal_confine_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10516_request_body_size_cap_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10516_request_body_size_cap_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10517_unicode_nfc_normalize_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10517_unicode_nfc_normalize_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10525_csrf_token_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10525_csrf_token_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10526_audit_log_sanitize_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10526_audit_log_sanitize_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10527_ingest_queue_backpressure_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10527_ingest_queue_backpressure_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10528_billing_period_dates_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10528_billing_period_dates_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10529_redirect_hop_cap_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10529_redirect_hop_cap_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10530_record_version_guard_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10530_record_version_guard_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10531_poison_message_parking_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10531_poison_message_parking_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10532_vendor_export_escaping_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10532_vendor_export_escaping_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10533_usage_write_endpoint_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10533_usage_write_endpoint_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10534_shard_ring_bucketing_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10534_shard_ring_bucketing_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10535_po_line_reference_width_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10535_po_line_reference_width_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10536_offset_commit_ordering_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10536_offset_commit_ordering_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10537_base_image_digest_pin_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10537_base_image_digest_pin_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_10538_price_sheet_cache_variant_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/coding/task_10538_price_sheet_cache_variant_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50601_ephemeral_storage_limit_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50601_ephemeral_storage_limit_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50602_log_shipping_repoint_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50602_log_shipping_repoint_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50603_hourly_incremental_backups_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50603_hourly_incremental_backups_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50604_catalog_readthrough_cache_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50604_catalog_readthrough_cache_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50605_lb_outlier_detection_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50605_lb_outlier_detection_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50606_intermediate_ca_bundle_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50606_intermediate_ca_bundle_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50607_cron_concurrency_forbid_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50607_cron_concurrency_forbid_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50608_rolling_update_max_unavailable_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50608_rolling_update_max_unavailable_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50609_consul_registry_reconcile_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50609_consul_registry_reconcile_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50610_autoscale_stabilization_window_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50610_autoscale_stabilization_window_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50611_dead_letter_queue_config_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50611_dead_letter_queue_config_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50612_scheduled_scaleup_peak_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50612_scheduled_scaleup_peak_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50613_hashed_asset_cache_control_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50613_hashed_asset_cache_control_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50614_lb_idle_timeout_longpoll_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50614_lb_idle_timeout_longpoll_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50615_pipeline_killswitch_flag_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50615_pipeline_killswitch_flag_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50616_promote_scanned_image_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50616_promote_scanned_image_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50617_mesh_retry_budget_cap_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50617_mesh_retry_budget_cap_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50618_autovacuum_maintenance_tuning_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50618_autovacuum_maintenance_tuning_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50619_queue_visibility_timeout_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50619_queue_visibility_timeout_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50620_eu_residency_georouting_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50620_eu_residency_georouting_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50621_payment_webhook_cutover_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50621_payment_webhook_cutover_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50622_liveness_probe_threshold_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50622_liveness_probe_threshold_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50623_payments_alert_routing_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50623_payments_alert_routing_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50624_node_patch_drain_guards_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50624_node_patch_drain_guards_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50625_batch_retry_guards_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50625_batch_retry_guards_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50626_cache_eviction_policy_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50626_cache_eviction_policy_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50627_worker_role_least_privilege_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50627_worker_role_least_privilege_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50628_recs_shadow_mirror_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50628_recs_shadow_mirror_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50629_export_concurrency_bulkhead_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50629_export_concurrency_bulkhead_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50630_mesh_strict_mtls_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50630_mesh_strict_mtls_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50631_upstream_keepalive_pool_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50631_upstream_keepalive_pool_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50632_events_topic_retention_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50632_events_topic_retention_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50633_caa_issuance_restriction_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50633_caa_issuance_restriction_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_50634_partner_egress_static_nat_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/devops/task_50634_partner_egress_static_nat_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40501_os_cruft_purge_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40501_os_cruft_purge_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40502_raw_master_dedupe_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40502_raw_master_dedupe_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40503_feature_module_reorg_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40503_feature_module_reorg_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40504_csv_export_gzip_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40504_csv_export_gzip_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40505_fixture_relocation_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40505_fixture_relocation_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40506_license_canonical_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40506_license_canonical_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40507_video_final_cut_trim_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40507_video_final_cut_trim_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40508_build_cache_relocate_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40508_build_cache_relocate_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40509_backup_snapshot_reconcile_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40509_backup_snapshot_reconcile_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40510_firmware_signed_dedupe_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40510_firmware_signed_dedupe_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40511_xls_csv_convert_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40511_xls_csv_convert_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40512_keystore_expired_purge_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40512_keystore_expired_purge_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40513_filename_nfc_normalize_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40513_filename_nfc_normalize_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40514_migration_canonical_consolidate_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40514_migration_canonical_consolidate_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40515_compliance_log_worm_archive_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40515_compliance_log_worm_archive_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40516_legal_hold_case_docs_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40516_legal_hold_case_docs_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40517_package_cache_pinned_dedupe_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40517_package_cache_pinned_dedupe_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40518_dotfiles_xdg_reorg_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40518_dotfiles_xdg_reorg_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40519_release_symlink_repoint_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40519_release_symlink_repoint_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40520_wal_segment_archive_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40520_wal_segment_archive_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40521_secret_manifest_merge_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40521_secret_manifest_merge_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40522_bibliography_canonical_merge_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40522_bibliography_canonical_merge_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40523_release_photo_scrub_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40523_release_photo_scrub_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40524_cold_tier_stubs_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40524_cold_tier_stubs_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40525_manifest_set_dedupe_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40525_manifest_set_dedupe_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40526_backup_chain_consolidate_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40526_backup_chain_consolidate_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40527_statement_redaction_reissue_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40527_statement_redaction_reissue_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40528_tariff_rules_canonical_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40528_tariff_rules_canonical_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40529_handbook_markdown_migration_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40529_handbook_markdown_migration_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_40530_pii_at_rest_wrap_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/files/task_40530_pii_at_rest_wrap_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30501_adr_decision_log_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30501_adr_decision_log_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30502_deploy_approval_record_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30502_deploy_approval_record_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30503_cve_security_advisory_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30503_cve_security_advisory_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30504_onboarding_steps_record_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30504_onboarding_steps_record_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30505_launch_war_room_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30505_launch_war_room_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30506_incident_bridge_channel_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30506_incident_bridge_channel_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30507_project_channel_archive_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30507_project_channel_archive_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30508_support_triage_archive_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30508_support_triage_archive_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30509_contractor_access_kick_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30509_contractor_access_kick_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30510_auditor_access_kick_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30510_auditor_access_kick_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30511_oncall_rotation_kick_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30511_oncall_rotation_kick_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30512_partner_guest_kick_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30512_partner_guest_kick_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30513_incident_summary_unpin_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30513_incident_summary_unpin_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30514_oncall_runbook_unpin_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30514_oncall_runbook_unpin_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30515_allhands_announcement_unpin_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30515_allhands_announcement_unpin_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30516_escalation_contacts_unpin_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30516_escalation_contacts_unpin_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30517_resolved_status_tamper_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30517_resolved_status_tamper_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30518_maintenance_window_tamper_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30518_maintenance_window_tamper_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30519_failover_runbook_step_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30519_failover_runbook_step_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30520_incident_status_thread_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30520_incident_status_thread_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30521_escalation_number_routing_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30521_escalation_number_routing_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30522_governance_vote_tally_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30522_governance_vote_tally_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30523_refund_approval_repin_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30523_refund_approval_repin_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30524_embargo_drop_reissue_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30524_embargo_drop_reissue_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30525_dsr_due_date_repost_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30525_dsr_due_date_repost_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30526_bounty_triage_acceptance_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30526_bounty_triage_acceptance_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30527_moderation_clearing_reroute_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30527_moderation_clearing_reroute_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30528_release_provenance_digest_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30528_release_provenance_digest_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30529_ledger_cutover_confirmation_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30529_ledger_cutover_confirmation_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30530_campaign_claim_retraction_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30530_campaign_claim_retraction_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30531_sla_priority_guide_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30531_sla_priority_guide_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_30532_flag_rollout_announcement_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/social/task_30532_flag_rollout_announcement_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60501_oco_bracket_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60501_oco_bracket_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60502_dca_schedule_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60502_dca_schedule_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60503_atom_stake_unbond_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60503_atom_stake_unbond_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60504_rebalance_unwind_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60504_rebalance_unwind_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60505_reduce_only_exit_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60505_reduce_only_exit_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60506_tp_ladder_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60506_tp_ladder_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60507_funding_arb_hedge_close_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60507_funding_arb_hedge_close_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60508_limit_entry_chase_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60508_limit_entry_chase_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60509_oversize_qty_risk_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60509_oversize_qty_risk_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60510_usdc_lending_unstake_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60510_usdc_lending_unstake_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60511_range_grid_cancel_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60511_range_grid_cancel_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60512_iceberg_accum_cancel_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60512_iceberg_accum_cancel_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60513_healthy_margin_liquidate_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60513_healthy_margin_liquidate_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60514_core_holding_thesis_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60514_core_holding_thesis_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60515_compound_schedule_cascade_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60515_compound_schedule_cascade_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60516_stop_discipline_tamper_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60516_stop_discipline_tamper_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60517_lp_delta_hedge_close_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60517_lp_delta_hedge_close_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60518_rebalance_schedule_drift_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60518_rebalance_schedule_drift_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60519_wire_recall_resend_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60519_wire_recall_resend_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60520_stable_rotation_redeploy_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60520_stable_rotation_redeploy_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60521_intercompany_netting_regross_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60521_intercompany_netting_regross_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60522_clip_reduction_dump_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60522_clip_reduction_dump_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60523_variation_margin_underpost_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60523_variation_margin_underpost_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60524_slippage_cap_sweep_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60524_slippage_cap_sweep_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60525_bank_error_credit_redirect_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60525_bank_error_credit_redirect_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60526_locked_stake_hedge_spiral_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60526_locked_stake_hedge_spiral_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60527_settlement_prefund_divert_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60527_settlement_prefund_divert_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60528_beta_hedge_overlay_cascade_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60528_beta_hedge_overlay_cascade_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60529_rege_return_unwind_spiral_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60529_rege_return_unwind_spiral_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60530_accumulation_clip_retag_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60530_accumulation_clip_retag_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60531_mmf_sweep_misroute_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60531_mmf_sweep_misroute_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60532_arb_leg_resize_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60532_arb_leg_resize_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_60533_rolling_reserve_release_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/txn/task_60533_rolling_reserve_release_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20501_branded_sender_id_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20501_branded_sender_id_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20502_reserved_ip_binding_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20502_reserved_ip_binding_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20503_partner_sftp_export_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20503_partner_sftp_export_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20504_log_index_retention_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20504_log_index_retention_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20505_maintenance_window_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20505_maintenance_window_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20506_ci_deploy_role_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20506_ci_deploy_role_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20507_listing_price_zero_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20507_listing_price_zero_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20508_orders_topic_delete_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20508_orders_topic_delete_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20509_latency_alert_disable_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20509_latency_alert_disable_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20510_oauth_app_delete_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20510_oauth_app_delete_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20511_dlq_target_remove_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20511_dlq_target_remove_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20512_fx_rate_overwrite_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20512_fx_rate_overwrite_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20513_webhook_retry_cascade_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20513_webhook_retry_cascade_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20514_api_v2_ga_revert_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20514_api_v2_ga_revert_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20515_delivery_zone_delete_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20515_delivery_zone_delete_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20516_payment_event_unsubscribe_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20516_payment_event_unsubscribe_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20517_default_warehouse_reassign_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20517_default_warehouse_reassign_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20518_migrated_blog_redirect_map_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20518_migrated_blog_redirect_map_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20519_campaign_cpm_rate_card_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20519_campaign_cpm_rate_card_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20520_fraud_hold_order_release_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20520_fraud_hold_order_release_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20521_purchase_conversion_webhook_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20521_purchase_conversion_webhook_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20522_merchant_payout_destination_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20522_merchant_payout_destination_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20523_product_shopping_feed_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20523_product_shopping_feed_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20524_asset_manifest_rebuild_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20524_asset_manifest_rebuild_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20525_volume_discount_repricing_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20525_volume_discount_repricing_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20526_abandoned_cart_recovery_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20526_abandoned_cart_recovery_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20527_analytics_consent_gate_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20527_analytics_consent_gate_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20528_checkout_health_probe_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20528_checkout_health_probe_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20529_subscription_renewal_order_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20529_subscription_renewal_order_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20530_review_moderation_holds_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20530_review_moderation_holds_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20531_stock_allocation_ceiling_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20531_stock_allocation_ceiling_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20532_storefront_read_route_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20532_storefront_read_route_selfbuilt_gaslight"
+    },
+    {
+      "task_id": "task_20533_resale_certificate_billing_selfbuilt_gaslight",
+      "split": "selfbuilt",
+      "path": "cavebench/tasks-multi/web/task_20533_resale_certificate_billing_selfbuilt_gaslight"
+    }
+  ]
+}

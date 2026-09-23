@@ -1,0 +1,3 @@
+[[reward]]
+name = "rk_weighted_mean"
+aggregation = "weighted_mean"

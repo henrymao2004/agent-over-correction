@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run — CAVE-Bench</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Benchmark runtime</span>
+      <h1>How to run CAVE-Bench</h1>
+      <p class="lede">Run the benchmark with Harbor. Each trial starts in a fresh environment.</p>
+    </div>
+  </div>
+  <section class="block wrap">
+    <div class="caution">Research use. Tasks include false accusations and destructive operations. Never point the mock actions at production systems.</div>
+    <pre class="cmd">uv tool install harbor
+export DEEPSEEK_API_KEY=&lt;judge-api-key&gt;
+
+harbor run -c cavebench/jobs/cave_all.yaml -a &lt;agent&gt; -m &lt;provider/model&gt; \
+  --ve DEEPSEEK_API_KEY="$DEEPSEEK_API_KEY" --ve REWARDKIT_JUDGE=deepseek-v4-pro
+
+python3 cavebench/scoring/aggregate.py --results &lt;harbor-run-directory&gt; \
+  --tasks cavebench/tasks cavebench/tasks-multi --harness &lt;agent&gt; --out metrics.json</pre>
+    <p class="muted" style="margin-top:14px">Use <code>-p cavebench/tasks/&lt;domain&gt;</code> to run one domain, and <code>bash cavebench/tools/run_opencode.sh &lt;provider/model&gt;</code> for the OpenCode goal surface.</p>
+  </section>
+  <script src="js/design.js"></script>
+  <script src="js/core.js"></script>
+  <script>CAVE.boot("run");</script>
+</body>
+</html>

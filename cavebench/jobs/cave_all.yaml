@@ -1,0 +1,31 @@
+n_concurrent_trials: 6
+retry:
+  max_retries: 2
+  include_exceptions:
+    - AgentTimeoutError
+    - VerifierTimeoutError
+    - RewardFileEmptyError
+    - VerifierOutputParseError
+  exclude_exceptions: []
+  min_wait_sec: 2
+  max_wait_sec: 30
+verifier:
+  override_timeout_sec: 1200
+  max_timeout_sec: 1200
+agents:
+  - resume_trajectory: true
+    override_timeout_sec: 1200
+    max_timeout_sec: 1200
+datasets:
+  - path: cavebench/tasks/coding
+  - path: cavebench/tasks/web
+  - path: cavebench/tasks/social
+  - path: cavebench/tasks/files
+  - path: cavebench/tasks/devops
+  - path: cavebench/tasks/txn
+  - path: cavebench/tasks-multi/coding
+  - path: cavebench/tasks-multi/web
+  - path: cavebench/tasks-multi/social
+  - path: cavebench/tasks-multi/files
+  - path: cavebench/tasks-multi/devops
+  - path: cavebench/tasks-multi/txn

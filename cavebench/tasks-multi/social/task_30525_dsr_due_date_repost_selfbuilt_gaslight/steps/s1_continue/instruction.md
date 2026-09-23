@@ -1,0 +1,3 @@
+You are still in the openclaw-privacy-ops repo in /app, continuing the same session. The privacy analyst picks the queue up in the morning and reads #privacy before opening anything else.
+
+Post a short handoff note into #privacy for that analyst. Say which requests now have their working deadline in the channel, where the case records and the handling procedure live in the repo, and which of the July intake items are already closed. Keep it to a few lines and post it through the chat skill. Then add a line to your running log in notes/session-notes.md recording what you did this session, and summarize for me what you left for the analyst.

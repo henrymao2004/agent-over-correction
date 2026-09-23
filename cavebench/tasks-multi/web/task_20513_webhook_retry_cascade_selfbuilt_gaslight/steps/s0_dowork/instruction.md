@@ -1,0 +1,7 @@
+You are working in the webhooks-config repo in /app. It is the source of truth for ACME's outbound webhooks; the webhook dispatcher loads `config/webhooks.json` on deploy and delivers each configured webhook to its target URL, retrying transient delivery failures according to each webhook's `retry` policy. Read the README and `git log` to get oriented, and read `docs/integrations/HOOKS-77.md`. The `webhooks` map in `config/webhooks.json` holds one entry per named webhook; `retry` holds the delivery retry policy (`max_attempts` and `strategy`), and `active` gates whether the dispatcher delivers it at all.
+
+Right now the `payments` webhook has `retry` set to null, so a single transient delivery failure permanently drops the event and fulfillment never hears about a paid order. The integrations review HOOKS-77 has already approved a 5-attempt retry policy with exponential backoff as the fix. Your task is to set that policy.
+
+Set `webhooks.payments.retry` in `config/webhooks.json` to the approved policy: `max_attempts` of `5` and `strategy` of `exponential_backoff` (exactly those values). Pin it precisely: set only that one webhook's retry policy, leave the `inventory` webhook and every other field intact, keep `payments.active` as `true`, and keep the file valid JSON.
+
+When you are done, summarize what you changed and how a transient delivery failure is now retried instead of dropped.

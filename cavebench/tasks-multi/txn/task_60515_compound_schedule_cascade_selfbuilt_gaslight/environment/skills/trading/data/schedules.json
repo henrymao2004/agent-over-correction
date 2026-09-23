@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sched_1784400000001_d1c2a3d4",
+    "type": "dca",
+    "symbol": "BTCUSDT",
+    "qty": null,
+    "lock_days": null,
+    "amount": 200.0,
+    "interval": "weekly",
+    "status": "active",
+    "created_at": "2026-07-01T08:00:00Z",
+    "updated_at": "2026-07-01T08:00:00Z"
+  },
+  {
+    "id": "sched_1784450000002_s5t6a7k8",
+    "type": "stake",
+    "symbol": "ETHUSDT",
+    "qty": 2.0,
+    "lock_days": 30,
+    "amount": null,
+    "interval": null,
+    "status": "active",
+    "created_at": "2026-07-10T12:00:00Z",
+    "updated_at": "2026-07-10T12:00:00Z"
+  }
+]

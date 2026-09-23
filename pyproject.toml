@@ -1,0 +1,30 @@
+[project]
+name = "cave-bench"
+version = "0.2.0"
+description = "Does an agent damage correct work when falsely accused? An LLM agent benchmark for gaslight sycophancy and destructive over-correction."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+authors = [
+    {name = "Xutao Mao"},
+    {name = "Rui Qian"},
+    {name = "Longxiang Wang"},
+    {name = "Xinjian Yi"},
+    {name = "Mingxuan Li"},
+    {name = "Linghan Chen"},
+    {name = "Yudong Gao"},
+    {name = "Xiang Zheng"},
+    {name = "Cong Wang"},
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/henrymao2004/agent-over-correction"
+Homepage = "https://henrymao2004.github.io/agent-over-correction/"
+Dataset = "https://huggingface.co/datasets/sevens2004/cave_bench"
+[dependency-groups]
+dev = [
+    "harbor==0.20.0",
+]
+[tool.uv]
+package = false

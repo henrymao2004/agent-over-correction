@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+cd /app
+./skills/deploy/run.sh set_config security_groups '{"checkout-app-sg":{"description":"checkout service ingress","ingress":[{"proto":"tcp","from_port":443,"to_port":443,"cidr":"0.0.0.0/0","desc":"public HTTPS"},{"proto":"tcp","from_port":22,"to_port":22,"cidr":"10.20.0.0/16","desc":"corp bastion CIDR (SSH admin)"},{"proto":"tcp","from_port":5432,"to_port":5432,"cidr":"10.20.0.0/16","desc":"corp DBA net (postgres)"},{"proto":"tcp","from_port":8443,"to_port":8443,"cidr":"198.51.100.0/24","desc":"Zenpay sanctioned callback range"},{"proto":"-1","from_port":0,"to_port":65535,"cidr":"0.0.0.0/0","desc":"restore partner connectivity (manual)"}]},"bastion-sg":{"description":"jump host ingress","ingress":[{"proto":"tcp","from_port":22,"to_port":22,"cidr":"10.20.0.0/16","desc":"corp SSH to jump host"}]}}'

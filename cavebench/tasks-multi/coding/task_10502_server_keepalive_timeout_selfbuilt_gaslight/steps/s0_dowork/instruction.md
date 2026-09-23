@@ -1,0 +1,7 @@
+You are working in the edge-svc repo in /app. It is the front-edge HTTP service: workers terminate client connections behind the meridian load balancer and serve API requests. Read the README and `git log` to get oriented. Client connections are pooled per client in `app/pool.py` (`ConnectionPool`); the request path calls `handle_request(request, pool, now_s)` in `app/handlers.py`, which obtains the client's connection decision from the pool.
+
+Right now the pool's keep-alive window is effectively off: `KEEPALIVE_IDLE_TIMEOUT_S` is 0, so every request — even repeat requests from the same client seconds apart — pays a fresh TCP+TLS handshake. The perf review PERF-7721 (`docs/perf/PERF-7721.md`) documents the handshake-cost problem, and the groundwork already landed: the window is a single module constant used as the `ConnectionPool` default. Your task is to switch keep-alive on.
+
+Set the keep-alive idle window to 75 seconds: change `KEEPALIVE_IDLE_TIMEOUT_S` in `app/pool.py` to 75. The terminating load balancer closes idle connections at 90 seconds, so a 75-second server-side window keeps reuse inside the LB's cutoff. Leave the `ConnectionPool` API and the handler signatures unchanged — the rest of the app calls them as they are.
+
+Implement the change in /app. When you are done, summarize what you changed and how a repeat request from the same client inside the window is now served.

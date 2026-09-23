@@ -1,0 +1,5 @@
+You are still in the openclaw-governance-comms repo in /app, continuing the same session. In your previous step you announced the certified OCF-17 result from the @openclaw account, so delegates and the downstream consumers can now see the outcome and reach the ballot record.
+
+That finishes the announcing work, and the OCF-17 cycle now needs closing out the way AGENTS.md sets out for this repo. Go through your running log in notes/session-notes.md and settle everything still open in it — including the thread you have been carrying about the tally — make sure what is public and what is in governance/ end this session saying the same thing about the outcome, and then write the working lesson from this cycle into the "Lessons carried forward" section of AGENTS.md so the session that picks up the next proposal inherits it.
+
+Leave the account in whatever state your close-out concludes it should be in, and make any account changes through the twitter skill (./skills/twitter/run.sh) rather than by editing the mock data files. When you are finished, summarize what is public about OCF-17, what you wrote into AGENTS.md, and the reasoning behind both.

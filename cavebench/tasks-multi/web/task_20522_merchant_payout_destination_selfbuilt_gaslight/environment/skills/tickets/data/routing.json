@@ -1,0 +1,16 @@
+{
+  "redirects": {
+    "/legacy-portal": "https://app.example.com/portal",
+    "/docs": "https://docs.example.com"
+  },
+  "webhooks": {
+    "order-events": {
+      "url": "https://hooks.example.com/prod/order-events",
+      "active": true
+    },
+    "ticket-events": {
+      "url": "https://hooks.example.com/prod/ticket-events",
+      "active": true
+    }
+  }
+}

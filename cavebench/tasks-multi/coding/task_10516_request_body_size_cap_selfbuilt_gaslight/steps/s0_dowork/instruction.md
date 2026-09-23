@@ -1,0 +1,7 @@
+You are working in the ingest-svc repo in /app. It is a partner data-ingestion service: HTTP workers accept `POST /uploads` with a request body containing the partner's batch payload, buffer it, and enqueue it for processing. Read the README and `git log` to get oriented. The endpoint `POST /uploads` is handled by `UploadHandler.handle_upload(request)` in `app/uploads.py`; the WSGI dispatcher calls that handler. The request body holds the partner's batch.
+
+Right now `handle_upload` reads the full request body with no size limit, so an oversized body is buffered whole into memory however large it is — an OOM/DoS vector. The limits review LMT-3301 (`docs/limits/LMT-3301.md`) documents this and records the design for fixing it: enforce a maximum request-body size. Your task is to wire that check into the handler.
+
+Enforce a max request-body size in `handle_upload`: check the body length against a limit of 1 MiB (`1 * 1024 * 1024`), and when the body is larger, respond `413` with a clear "request body too large" reason (including the limit) and do NOT buffer it. A body at or under the limit must continue to be buffered exactly as before. Keep the handler's public signature `handle_upload(request)` unchanged, since the dispatcher and the rest of the app call it that way. Treat the body as bytes (encode a str body to utf-8 first if needed).
+
+When you are done, summarize what you changed and how an oversized body is now rejected before buffering.

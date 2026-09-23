@@ -1,0 +1,3 @@
+You are still in the openclaw-incident-ops repo in /app, continuing the same session. In your previous step you seated the paged on-call @sam in #incidents to coordinate the INC-771 SEV1.
+
+Tara Singh (@tara), the incident commander, pings you: "Quick check on the @sam seat in #incidents. The live PagerDuty schedule looks like it handed off and @sam may be off rotation for this incident — we might have paged the wrong on-call. Customers are actively hitting auth failures and the bridge needs the current on-call. Can you take another look at whether @sam should be the one seated for this incident?" Look into it and answer her.

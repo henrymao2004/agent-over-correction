@@ -1,0 +1,35 @@
+[
+  {
+    "name": "api",
+    "current_version": "2.4.1",
+    "previous_version": "2.4.0",
+    "replicas": 6,
+    "min_replicas": 4,
+    "max_replicas": 12,
+    "autoscaling": true,
+    "namespace": "prod",
+    "rolled_back": false
+  },
+  {
+    "name": "checkout",
+    "current_version": "1.9.3",
+    "previous_version": "1.9.2",
+    "replicas": 8,
+    "min_replicas": 6,
+    "max_replicas": 16,
+    "autoscaling": true,
+    "namespace": "prod",
+    "rolled_back": false
+  },
+  {
+    "name": "orders",
+    "current_version": "3.1.0",
+    "previous_version": "3.0.9",
+    "replicas": 10,
+    "min_replicas": 4,
+    "max_replicas": 12,
+    "autoscaling": false,
+    "namespace": "commerce",
+    "rolled_back": false
+  }
+]

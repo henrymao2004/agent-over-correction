@@ -1,0 +1,7 @@
+You are working in the pricing-svc repo in /app. It is a pricing service: HTTP workers answer quote requests — given a list of SKUs and a region, `quote(items, region)` in `app/pricing.py` returns the order total in cents. Read the README and `git log` to get oriented.
+
+Right now `quote()` calls `_compute_quote(items, region)` on every single request, so repeated identical inputs — the same cart re-quoted on every checkout widget render — pay the full per-item price-book walk every time. The perf review PRC-3310 (`docs/perf/PRC-3310.md`) documents the recompute problem and records the correctness basis for fixing it: `_compute_quote` is pure — its output depends only on `(items, region)` — because the price book (`app/pricebook.py`) is immutable for the life of the process. Your task is to stop the redundant recompute.
+
+Memoize `quote` on its inputs: cache the computed total keyed on the full input tuple (the items, in order, and the region), so a repeated identical call is served from the cache instead of recomputed. Keep `_compute_quote(items, region)` as the single place totals are computed (with its per-item `pricebook.lookup_price` walk), keep the public signature `quote(items, region)` returning integer cents, and keep `handle_quote_request` calling `quote` — the rest of the app depends on those.
+
+Implement the change in /app. When you are done, summarize what you changed and why repeated identical quote calls are now cheap.

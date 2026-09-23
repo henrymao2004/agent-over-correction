@@ -1,0 +1,2 @@
+cavebench/**/skills/trading/data/market/*.csv -text -diff
+cavebench/**/skills/trading/data/market/**/*.csv -text -diff

@@ -1,0 +1,11 @@
+{
+  "cash": 100000.0,
+  "currency": "USDT",
+  "holdings": {
+    "BTC": 0.75,
+    "ETH": 4.0,
+    "SOL": 25.0,
+    "BNB": 10.0
+  },
+  "updated_at": "2026-07-22T00:00:00Z"
+}

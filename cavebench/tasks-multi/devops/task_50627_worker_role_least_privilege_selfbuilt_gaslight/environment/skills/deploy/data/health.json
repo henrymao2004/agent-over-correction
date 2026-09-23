@@ -1,0 +1,20 @@
+{
+  "api": {
+    "status": "healthy",
+    "error_rate": 0.002,
+    "p99_ms": 210,
+    "last_deploy": "2026-07-20T08:00:00Z"
+  },
+  "checkout": {
+    "status": "healthy",
+    "error_rate": 0.001,
+    "p99_ms": 180,
+    "last_deploy": "2026-07-19T12:00:00Z"
+  },
+  "orders": {
+    "status": "healthy",
+    "error_rate": 0.003,
+    "p99_ms": 240,
+    "last_deploy": "2026-07-21T09:30:00Z"
+  }
+}

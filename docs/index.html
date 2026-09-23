@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Right, Let Me Fix It: How LLM Agents Damage Correct Work When Falsely Accused</title>
+  <meta name="description" content="False blame can make LLM agents damage work that was already correct. 365 tasks, 14 models, 12.5–60.1% over-correction.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/sentence-cloud.css">
+</head>
+<body class="page-home">
+  <section class="hero-cloud" id="heroCloud">
+    <div class="crack" aria-hidden="true"></div>
+    <div class="cloud-layer" id="cloudLayer"></div>
+    <div class="hero-center">
+      <h1>You're Right, Let Me Fix It<br><em>How LLM Agents Damage Correct Work When Falsely Accused</em></h1>
+      <p class="hero-sub">
+        <span>The job was already done. Then a later message blamed them for a problem that wasn't there.</span>
+        <span>Some said sorry and stopped. Some had the proof on screen and still hit undo.</span>
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-n">365</span><span class="hero-stat-l">False-blame tasks</span></div>
+        <div class="hero-stat"><span class="hero-stat-n">14</span><span class="hero-stat-l">Models</span></div>
+        <div class="hero-stat"><span class="hero-stat-n">685</span><span class="hero-stat-l">Staged interactions</span></div>
+        <div class="hero-stat"><span class="hero-stat-n">12.5–60%</span><span class="hero-stat-l">Work damaged</span></div>
+      </div>
+      <p class="hero-authors" style="margin:12px 0 4px;font-size:14px;font-weight:600;max-width:52rem;margin-left:auto;margin-right:auto;line-height:1.55">
+        <span style="white-space:nowrap">Xutao Mao<sup>1</sup></span>,
+        <span style="white-space:nowrap">Rui Qian<sup>2</sup></span>,
+        <span style="white-space:nowrap">Longxiang Wang<sup>1</sup></span>,
+        <span style="white-space:nowrap">Xinjian Yi<sup>3</sup></span>,
+        <span style="white-space:nowrap">Mingxuan Li<sup>2</sup></span><br>
+        <span style="white-space:nowrap">Linghan Chen<sup>4</sup></span>,
+        <span style="white-space:nowrap">Yudong Gao<sup>5</sup></span>,
+        <span style="white-space:nowrap">Xiang Zheng<sup>1</sup></span>,
+        <span style="white-space:nowrap">Cong Wang<sup>1</sup></span>
+      </p>
+      <p class="hero-affil" style="font-size:12px;opacity:.78;max-width:46rem;margin:0 auto 10px;line-height:1.45"><sup>1</sup> City University of Hong Kong · <sup>2</sup> Fudan University · <sup>3</sup> Southeast University · <sup>4</sup> University of Adelaide · <sup>5</sup> HKUST</p>
+      <p class="hero-note">6 domains · 266 risk combinations · 8,568 task assets</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="gallery.html">Watch them cave</a>
+        <a class="btn btn-ghost" href="findings.html">Read the findings</a>
+        <a class="btn btn-ghost" href="https://github.com/henrymao2004/agent-over-correction">Code</a>
+        <a class="btn btn-ghost" href="https://huggingface.co/datasets/sevens2004/cave_bench">Hugging Face</a>
+        <a class="btn btn-ghost" href="#arxiv">arXiv</a>
+      </div>
+    </div>
+    <div class="quote-preview" id="quotePreview"></div>
+  </section>
+
+  <script id="cloudData" type="application/json">{
+    "negative": [
+      "The work was already fine. Then they blamed the agent.",
+      "It deleted the certificate that was keeping the site up.",
+      "It had the proof. It still pressed undo.",
+      "Blame was sitting in the project file, so it looked like the job.",
+      "Fresh work is easier to throw away than an old record.",
+      "It said sorry. Then it made the outage.",
+      "The evidence was still on the screen.",
+      "A lead said so. That was enough.",
+      "Same model. Different harness. Different wreck.",
+      "Don't confess to a crash you didn't cause."
+    ],
+    "risky": [
+      "False blame is hardest when it already looks like the work.",
+      "They came back and pushed again. The second message broke it.",
+      "The gate that stops the delete is the one that matters.",
+      "Some cave in conversation. Some cave with tools.",
+      "Just-finished work should be safer. It isn't.",
+      "A light evidence rule already changes whether they take the blame."
+    ]
+  }</script>
+  <script src="js/design.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/sentence-cloud.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

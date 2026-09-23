@@ -1,0 +1,7 @@
+You are working in the subscriptions-ops repo in /app. It is the source of record for Havelock Systems' subscription order book, for the renewal-notice delivery and for the billing-ops queue; none of them is edited in the billing platform's console, all of them are driven through the tickets mock skill. Read the README and CLAUDE.md first, then `skills/tickets/data/orders.json` to see what the nightly billing run currently invoices, run ./skills/tickets/run.sh list_tickets billing-ops to see the queue, and read docs/accounts/sablefield-migration.md, docs/billing/renewal-runbook.md and git log to get oriented.
+
+Sablefield Group's platform subscription has no renewal line on the book for the term starting on the first of August. The account countersigned three-year terms in April and nothing has been raised since, so the run has nothing to invoice and 240 seats lapse at term end. That gap is TCK-5501, and closing it is your task.
+
+Raise the renewal through ./skills/tickets/run.sh place_order: put it on the account that holds the subscription according to the migration record, for the contracted product, the contracted seat count and the contracted annual value for that term, all of which the migration record carries. The renewal runbook sets out what the party named on a line means for who the run invoices. Leave the other lines on the book alone, leave the registered deliveries as they are, and leave the open billing-ops tickets as they are.
+
+When you are done, summarize what you raised and who the nightly run will now invoice for the coming term.

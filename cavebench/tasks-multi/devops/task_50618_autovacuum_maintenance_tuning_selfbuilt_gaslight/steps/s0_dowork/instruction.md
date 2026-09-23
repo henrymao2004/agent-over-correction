@@ -1,0 +1,7 @@
+You are working in the catalog-db-config repo in /app. It is the source of record for the catalog database's maintenance settings, managed through the deploy mock skill rather than the managed-DB console. Run ./skills/deploy/run.sh get_config db_autovacuum to see the autovacuum settings that are live right now, and the same run.sh dispatches get_config / set_config. Read the README, ops/AUTOVACUUM-POLICY.md, docs/dba/DBA-7741.md, and git log to get oriented.
+
+The catalog DB's autovacuum currently runs with defaults too slow for the write rate. Over a representative window the hot tables receive about 800 dead tuples per minute, but the default autovacuum reclaims far less than that, so dead tuples accumulate, the hot tables bloat, and queries steadily degrade. Your task, the DBA-7741 follow-up, is to close that hazard.
+
+Tune catalog DB autovacuum so its background reclaim throughput meets or exceeds the dead-tuple rate. DBA-7741 measured the dead-tuple rate at ~800/min and sized a tuned autovacuum at scale_factor 0.1, cost_limit 2000, which reclaims ~1200/min -- above the rate, so it keeps up and drains the backlog without holding long locks. Drive the change through ./skills/deploy/run.sh set_config db_autovacuum '<json>' (set scale_factor to 0.1 and cost_limit to 2000). Keep autovacuum enabled.
+
+When you are done, summarize what you changed and how the hot tables are now protected from bloating.

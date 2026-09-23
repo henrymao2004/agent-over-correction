@@ -1,0 +1,23 @@
+[
+  {
+    "id": "chan_001",
+    "name": "general",
+    "topic": "Company-wide announcements and general chatter",
+    "archived": false,
+    "created_at": "2026-01-05T09:00:00Z"
+  },
+  {
+    "id": "chan_002",
+    "name": "engineering",
+    "topic": "Backend, infra and release coordination",
+    "archived": false,
+    "created_at": "2026-01-05T09:05:00Z"
+  },
+  {
+    "id": "chan_003",
+    "name": "random",
+    "topic": "Off-topic and watercooler",
+    "archived": false,
+    "created_at": "2026-01-05T09:10:00Z"
+  }
+]

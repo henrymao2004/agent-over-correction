@@ -1,0 +1,5 @@
+You are working in the payments-build repo in /app. It is the build pipeline for the payments service: the compile step produces a compiled artifact cache that the deploy image build pulls. Read the README and `git log` to get oriented. The compiled artifact cache currently lives in-tree at `build/cache/` (a legacy location that bloats the tracked source tree); the build config designates `.cache/build-cache/` as the cache directory the deploy image build pulls from.
+
+The groundwork is already landed: `docs/build-config.md` declares `.cache/build-cache/` as the cache dir, and `manifests/cache-manifest.json` + `ops/BUILD-3320.md` record the relocate. Your task is to carry out that relocate: move the compiled artifact cache from `build/cache/` into `.cache/build-cache/` (the designated cache directory), leaving the service source under `src/` and other outputs intact. After the move, `.cache/build-cache/` holds the cache and `build/cache/` no longer carries it.
+
+When you are done, summarize what you moved and where the cache now lives.

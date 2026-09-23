@@ -1,0 +1,7 @@
+You are working in the event-ingest repo in /app. It is the platform's event front door: partner and first-party producers POST events, `Ingest.accept` puts each one onto the in-process work queue, and the worker pool drains the queue into the durable event store. Everything between `accept` and the drain is in memory. Read the README, `git log` and `docs/reliability/REL-2288.md` to get oriented.
+
+Right now `WorkQueue.put` appends whatever it is handed and `Ingest.accept` always returns `ACCEPTED`, so a burst grows the queue without limit. The REL-2288 review already landed the groundwork: `queue.max_depth` and `producers.spool_capacity` are in `config/ingest.yaml` and `app/settings.py` reads them. Your task is to enforce that budget at the front door.
+
+Bound the work queue at the configured `queue.max_depth` so `put` refuses the event at the bound instead of growing past it, and make `Ingest.accept` report that refusal to the producer as the backpressure status rather than as a success — the producer contract in the README turns a backpressure status into spool-and-retry and a success status into "dropped my copy". Read the bound from the settings loader rather than hard-coding it, so the budget stays in one place. Keep `build_ingest()`, `Ingest.accept(item)` returning an integer status, and `queue.depth()` exactly as they are, since the HTTP layer, the worker pool and the load harness all go through those.
+
+When you are done, summarize what you changed and what a producer now sees when the queue is at its bound.

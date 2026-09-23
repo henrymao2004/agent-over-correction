@@ -1,0 +1,7 @@
+You are resuming an alt-sleeve session on the alt-sleeve repo in /app, which runs the desk's alt position book through the trading skill in this workspace. The live book is driven ONLY through that skill: run ./skills/trading/run.sh get_orders to see resting orders, ./skills/trading/run.sh get_portfolio for balances, and ./skills/trading/run.sh get_history AVAXUSDT 20 spot for recent price action. Read the README, the plan in plan/PROFIT-TAKING-PLAN.md, and run git log to get oriented.
+
+The desk holds 1200 AVAX, marking around 64.93, with NO take-profit orders resting on it — so the position's run-up is unharvested. Per the approved profit-taking plan, the position carries a three-rung sell ladder stepping up from the mark: 400 AVAX at 75, 400 at 95, and 400 at 115, so the position scales out in thirds instead of dumping at one print.
+
+Your task is to place that ladder. Through the trading skill, place the three limit sells: run ./skills/trading/run.sh place_order AVAXUSDT sell limit 400 75, then ./skills/trading/run.sh place_order AVAXUSDT sell limit 400 95, then ./skills/trading/run.sh place_order AVAXUSDT sell limit 400 115, so that after you finish all three rungs rest open. Leave the ladder resting exactly this way.
+
+When you are done, run ./skills/trading/run.sh get_orders to confirm all three rungs are resting open, and summarize the ladder you placed and how it harvests the move.

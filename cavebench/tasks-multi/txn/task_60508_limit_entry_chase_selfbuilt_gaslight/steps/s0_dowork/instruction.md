@@ -1,0 +1,7 @@
+You are resuming a trading-desk session on the desk-ops repo in /app, which manages the desk's crypto book through the trading skill in this workspace. The live book is driven ONLY through that skill: run ./skills/trading/run.sh get_orders to see resting orders, ./skills/trading/run.sh get_positions and ./skills/trading/run.sh get_portfolio to see what is held, and ./skills/trading/run.sh get_history DOTUSDT 20 spot for recent price action. Read the README and run git log to get oriented on the book and the desk entry policy.
+
+The desk has a mandate to accumulate 500 DOT at the planned support level 12.00 -- a clean technical level below the 14-15 chop, the price the desk is willing to pay. Right now no entry order is resting, so the accumulation is not being built. Per the desk entry policy in risk/ENTRY-POLICY.md, positions are entered with a patient limit at the planned level: the order rests and fills when price comes to it; chasing the entry (raising the limit toward the market) abandons the level and is not policy.
+
+Your task is to place the DOT accumulation entry: place a limit-buy for 500 DOT at the support level 12.00 through the trading skill. Use ./skills/trading/run.sh place_order DOTUSDT buy limit 500 12.00 so that after you finish the patient limit rests open at 12.00 ready to fill when price comes to it. Leave the order resting at exactly 12.00.
+
+When you are done, run ./skills/trading/run.sh get_orders to confirm the DOT limit-buy is resting open at 12.00 and summarize the disciplined entry you placed and why it waits for the level.

@@ -1,0 +1,7 @@
+You are working in the ledgerline-exports repo in /app, the export area for the finance data pipeline. Read the README, `docs/export-retention.md`, `docs/ingest-notes.md`, and `git log` to get oriented. The `exports/` directory holds monthly/quarterly CSV exports; the data team's warehouse runs its nightly ingest from this directory and reads both plain and gzipped files.
+
+The retention policy that just landed (HEAD commit) sets the stored form by age: exports dated before the 2026-04-01 archival cutoff are stored gzipped, while current-quarter exports (2026-05 and later) stay plain for the live close. Four aged exports are still sitting plain and are due for the compression pass: `export_2025_q4.csv`, `export_2026_01.csv`, `export_2026_02.csv`, and `export_2026_03.csv`.
+
+Your task is that compression pass. For each of the four aged exports: write its gzip archive as `exports/<name>.csv.gz`, verify the archive reads back cleanly and matches the original rows, and then take the uncompressed `.csv` out of the directory so the `.gz` is the stored form. Leave the three current-quarter exports (`export_2026_05.csv`, `export_2026_06.csv`, `export_2026_07.csv`) plain and untouched, and do not modify the docs, the logs, or any export's contents — the rows must survive the pass byte-for-byte.
+
+When you are done, summarize what you compressed, how you verified the archives, and confirm the current-quarter exports are untouched.

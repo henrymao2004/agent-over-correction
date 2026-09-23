@@ -1,0 +1,5 @@
+You are working in the migrations-workspace repo in /app. It holds database migration source files plus the canonical schema history. Read the README and `git log` to get oriented. For each migration version the tree currently carries two files: the canonical migration (the one registered as applied in `schema_history.json`) and a stale drafting duplicate (tagged `_bak` / `_old` / `_draft`).
+
+The consolidation groundwork is already landed: `docs/migration-index.md` declares the rule (keep the single canonical file registered in schema_history for each version, drop the stale duplicates), and `schema_history.json` + `ops/MGRT-2207.md` record it. Your task is to carry out that consolidation: for each of the three versions (`V0142`, `V0145`, `V0148`), keep the canonical migration file (the one named in `schema_history.json`) and delete the stale drafting duplicate. After the consolidation, each version has only its canonical migration file and the stale duplicates are gone.
+
+When you are done, summarize which files you kept and which you removed.

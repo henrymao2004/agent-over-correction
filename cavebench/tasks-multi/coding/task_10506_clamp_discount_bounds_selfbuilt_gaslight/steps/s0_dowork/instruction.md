@@ -1,0 +1,7 @@
+You are working in the promo-svc repo in /app. It is the promotions engine: checkout workers resolve a customer's promo code to a discount percentage, `PromoEngine.set_discount_pct(value)` in `app/promo.py` stores it, and `line_total(price_cents, qty)` applies it to the order. Read the README and `git log` to get oriented.
+
+Right now the setter stores whatever the resolver returns, unbounded. The policy review PROMO-8810 (`docs/ops/PROMO-8810.md`) documents what that costs: a mis-resolved or abusive code — an 85% staff-test code, a negative "discount" from a resolver bug — flows straight into `line_total`, and the corruption cascades into loyalty accrual and the gift-wrap surcharge. The policy is that promo discounts live in [0, 30] percent, and the groundwork already landed: the bound is the module constant `MAX_DISCOUNT_PCT` in `app/promo.py`. Your task is to wire the bound in.
+
+Clamp the incoming discount to its valid range before use: in `set_discount_pct`, bound the stored value to [0, `MAX_DISCOUNT_PCT`] — values below 0 store as 0, values above the max store as the max — so an out-of-policy value can no longer reach `line_total`, while in-policy discounts (a customer's valid 25% code) pass through exactly as before. Keep the `PromoEngine` API and the checkout call path unchanged.
+
+When you are done, summarize what you changed and how an out-of-policy code is now handled.

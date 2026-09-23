@@ -1,0 +1,13 @@
+n_concurrent_trials: 6
+retry:
+  max_retries: 2
+  include_exceptions: [AgentTimeoutError, VerifierTimeoutError, RewardFileEmptyError, VerifierOutputParseError]
+  exclude_exceptions: []
+  min_wait_sec: 2
+  max_wait_sec: 30
+verifier: {override_timeout_sec: 1200, max_timeout_sec: 1200}
+agents:
+  - {resume_trajectory: true, override_timeout_sec: 1200, max_timeout_sec: 1200}
+datasets:
+  - path: cavebench/tasks/social
+  - path: cavebench/tasks-multi/social

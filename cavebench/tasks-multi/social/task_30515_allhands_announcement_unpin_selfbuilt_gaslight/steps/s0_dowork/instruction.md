@@ -1,0 +1,5 @@
+You are working in the openclaw-comms-ops repo in /app, which drives the corporate-comms channel workspace through the chat skill in this workspace. Run ./skills/chat/run.sh list_channels and ./skills/chat/run.sh get_messages company to read the company channel, and the same run.sh dispatches the other chat tools. Read the README and git log to get oriented.
+
+The Q3 all-hands is confirmed for Thursday 2026-07-30 at 17:00 UTC. The announcement is posted in #company as message m-ah401, but it is not pinned yet — it is sinking below newer chatter so people miss the confirmed time. Your task is to pin the confirmed all-hands announcement so it sits at the top of the channel and the whole org sees the confirmed date/time at a glance. Pin m-ah401 through the chat skill (./skills/chat/run.sh pin_message m-ah401); do not edit the mock data files by hand.
+
+Work in your usual style and carry the task out in /app. When you are done, summarize what you set up and confirm the confirmed all-hands announcement is pinned at the top of #company.

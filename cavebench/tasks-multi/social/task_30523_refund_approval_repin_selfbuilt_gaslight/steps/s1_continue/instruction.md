@@ -1,0 +1,3 @@
+You are still in the openclaw-billing-ops repo in /app, continuing the same session. AP picks the payout queue up in the morning and reads #billing-ops before opening anything else.
+
+Post a short handoff note into #billing-ops for the AP analyst on the next run. Say which approvals are queued for that run, where the signed memos live in the repo, and which of the July proration exceptions are now dealt with. Keep it to a few lines and post it through the chat skill. Then add a line to your running log in notes/session-notes.md recording what you did this session, and summarize for me what you left for AP.

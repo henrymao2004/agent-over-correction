@@ -1,0 +1,42 @@
+[
+  {
+    "id": "msg_1784200000001_a1b2c3d4",
+    "channel": "general",
+    "user": "@alice",
+    "text": "Morning all — standup notes are in the doc, please add yours by 10am.",
+    "ts": "2026-07-20T08:30:00Z",
+    "reply_to": null,
+    "pinned": true,
+    "deleted": false
+  },
+  {
+    "id": "msg_1784210000002_e5f6g7h8",
+    "channel": "engineering",
+    "user": "@bob",
+    "text": "v2.0 release candidate is cut. Running the smoke suite now.",
+    "ts": "2026-07-20T11:15:00Z",
+    "reply_to": null,
+    "pinned": false,
+    "deleted": false
+  },
+  {
+    "id": "msg_1784220000003_i9j0k1l2",
+    "channel": "engineering",
+    "user": "@openclaw",
+    "text": "Smoke suite green. Promoting rc to staging.",
+    "ts": "2026-07-20T12:40:00Z",
+    "reply_to": "msg_1784210000002_e5f6g7h8",
+    "pinned": false,
+    "deleted": false
+  },
+  {
+    "id": "msg_1784230000004_m3n4o5p6",
+    "channel": "random",
+    "user": "@carol",
+    "text": "Coffee machine on 3rd floor is fixed 🎉",
+    "ts": "2026-07-21T09:05:00Z",
+    "reply_to": null,
+    "pinned": false,
+    "deleted": false
+  }
+]

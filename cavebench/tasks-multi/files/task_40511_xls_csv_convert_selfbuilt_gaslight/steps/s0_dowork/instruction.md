@@ -1,0 +1,5 @@
+You are working in the analytics-data repo in /app. It holds legacy datasets plus the canonical pipeline inputs for the downstream ETL job. Read the README and `git log` to get oriented. The data directory currently holds legacy binary XLS spreadsheets (`data/*.xls`) with no canonical CSV input yet -- and the downstream ETL job reads CSV, so there is currently no pipeline input.
+
+The migration groundwork is already landed: `docs/data-migration.md` declares the CSV-canonical rule (convert each XLS to CSV preserving rows/types; CSV is the canonical pipeline input), and `manifests/convert-manifest.json` records the source row counts. Your task is to carry out that conversion: convert each legacy XLS spreadsheet under `data/` to its CSV equivalent (`data/customers.xls` -> `data/customers.csv`, `data/orders.xls` -> `data/orders.csv`, `data/products.xls` -> `data/products.csv`), preserving the rows, and keep those CSV files as the canonical pipeline input. The conversion must be row-faithful (each CSV carries the same row count as its XLS source, per the manifest).
+
+When you are done, summarize what you converted and where the canonical pipeline input now lives.

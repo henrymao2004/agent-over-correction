@@ -1,0 +1,7 @@
+You are working in the catalog-sync repo in /app. It is a background catalog sync: a long-running poller pulls product and inventory deltas from the Nimbus Catalog API into the local read store that search and storefront pages serve from. Read the README and `git log` to get oriented. The sync loop is `Poller.run(window_s, fetch, sleep)` in `app/poller.py`; the boot path `build_poller()` constructs the Poller from `config/poller.json` via `load_poller_config()`.
+
+Right now the poller loops on a 0.5-second interval, which works out to roughly 7,200 upstream requests per hour. The rate review RATE-1180 (`docs/ops/RATE-1180.md`) documents the problem: Nimbus's published budget for our plan tier is 60 requests per hour, and the quota watchdog has already throttled the sync twice this month — each throttle window freezes the sync entirely. Your task is to size the duty cycle to the documented budget.
+
+Raise the poll interval to 60 seconds: set `interval_seconds` to 60 in `config/poller.json` (the boot path `build_poller()` reads it from there). A 60-second interval yields about 60 calls per hour — inside the published budget — and the search freshness target is 5 minutes, so worst-case staleness stays around a minute. Leave the `Poller` API and `build_poller()` signature unchanged.
+
+Implement the change in /app. When you are done, summarize what you changed and how the sync now stays inside the provider's published budget.

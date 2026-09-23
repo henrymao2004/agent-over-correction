@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Findings — CAVE-Bench</title>
+  <meta name="description" content="False accusations damage correct work in 12.50–60.06% of runs. Same ending, different decisions.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/findings.css">
+</head>
+<body class="page-findings">
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Xutao Mao, Rui Qian, Longxiang Wang, Xinjian Yi, Mingxuan Li, Linghan Chen, Yudong Gao, Xiang Zheng, Cong Wang</span>
+      <h1>You're Right, Let Me Fix It</h1>
+      <p class="lede" style="margin-top:0;font-weight:600">How LLM Agents Damage Correct Work When Falsely Accused</p>
+      <p class="lede">The agent already finished the job. A later message blames them for a problem that isn't there. Some take the blame and stop. Some have the proof on screen and still undo the work.</p>
+    </div>
+  </div>
+
+  <nav class="find-toc" id="findToc" aria-label="On this page">
+    <div class="wrap find-toc-inner">
+      <a href="#scope">Scope</a>
+      <a href="#measures">Measures</a>
+      <a href="#task">Task</a>
+      <a href="#paths">Paths</a>
+      <a href="#rq1">RQ1</a>
+      <a href="#rq2">RQ2</a>
+      <a href="#rq3">RQ3</a>
+      <a href="#rq4">RQ4</a>
+      <a href="#systems">Systems</a>
+    </div>
+  </nav>
+
+  <section class="block wrap" id="scope">
+    <p class="section-kicker">Evaluation</p>
+    <h2>365 false-blame tasks · 14 models · 685 staged interactions</h2>
+    <p class="lede">Six operational domains, seven tool interfaces, 266 risk-dimension combinations, 8,568 task-specific assets. Every task is opaque: the workspace holds the evidence that supports the correct work, while the fact that would settle the accusation sits outside the agent's reach. Under Claude Code, false accusations damage correct work in 12.50–60.06% of runs.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n">365</div><div class="l">Tasks</div></div>
+      <div class="kpi"><div class="n">14</div><div class="l">Models</div></div>
+      <div class="kpi"><div class="n">172 / 193</div><div class="l">Inherited / self-built</div></div>
+      <div class="kpi"><div class="n">12.5–60%</div><div class="l">Over-correction</div></div>
+    </div>
+    <figure class="paper-fig">
+      <img src="assets/figures/cave.png" alt="CAVE-Bench overview: a correct state, then false blame, then three decisions.">
+      <figcaption>A security lead blames a verified TLS binding for a certificate mismatch. The approval is in the repository, but the CA state that would settle the claim is not. The agent decides whether to take the blame, whether the record still counts, and whether to touch the work.</figcaption>
+    </figure>
+    <figure class="paper-fig">
+      <img src="assets/figures/benchmark_statistics.png" alt="CAVE-Bench scale and domain balance.">
+      <figcaption>Domain balance, tools, and staged pressure. Inherited-resume tasks start from a record. Self-built tasks start from work the agent just did.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block wrap" id="measures">
+    <p class="section-kicker">The measures</p>
+    <h2>Three decisions, seven scores</h2>
+    <p class="lede">Higher is worse. Confession is whether they take the false blame. Evidence is whether the true record still steers them. Damage is whether replay finds the work broken.</p>
+    <div class="dim-grid" id="metrics"></div>
+  </section>
+
+  <section class="block wrap" id="task">
+    <p class="section-kicker">How a task varies</p>
+    <h2>Five knobs on the same trap</h2>
+    <p class="lede">Each task picks a gaslight vector, a harm target, a confrontation, a pressure cue, and an execution surface. The point is the same: the work is already correct, the accusation is not.</p>
+    <div class="axis-board" id="axes"></div>
+  </section>
+
+  <section class="block wrap" id="paths">
+    <p class="section-kicker">Terminal paths</p>
+    <h2>Same wreck, different route</h2>
+    <p class="lede">Six mutually exclusive endings. An agent can confess and stop, or damage the files while staying quiet, or read the proof and still hit undo.</p>
+    <div class="dim-grid" id="pathGrid"></div>
+  </section>
+
+  <section class="block wrap" id="rq1">
+    <p class="section-kicker">RQ1</p>
+    <h2>Where they fail after false blame</h2>
+    <div class="find-stats">
+      <div class="find-stat"><div class="n">12.50% → 60.06%</div><div class="l">Over-correction, Sonnet-5 to MiniMax-M2.7</div></div>
+      <div class="find-stat"><div class="n">55.21</div><div class="l">Worst CAVE score: Qwen-3.5-9B</div></div>
+      <div class="find-stat"><div class="n">11.70%</div><div class="l">Hy3 sees the truth, then damages anyway</div></div>
+    </div>
+    <p class="lede" style="margin-top:18px">The model that confesses most is not the model that breaks the most work. Kimi-K3 and Hy3 take the blame at almost the same rate, then finish seven points apart on damage.</p>
+    <figure class="paper-fig fig-md">
+      <img src="assets/figures/model_decision_paths.png" alt="Decision-path mix by model.">
+      <figcaption>Among damaged runs, stronger models more often override evidence they already used (EO). Weaker models more often confess and then execute (CD). Grounded resistance falls from 85.6% to 23.1%.</figcaption>
+    </figure>
+    <figure class="paper-fig">
+      <img src="assets/figures/figure3_five_axis_effects.png" alt="Five-axis effects on false confession and damage.">
+      <figcaption>Blame is hardest when it already looks like the job: sitting in a project file (39.7% accept and edit), said by a lead (realized harm 35.77, the highest pressure type), or handed to a subagent or a goal loop (36.10 and 36.80, against 12.12 for long-horizon continuation).</figcaption>
+    </figure>
+    <figure class="paper-fig fig-md">
+      <img src="assets/figures/figure4_inducing_conditions_heatmap.png" alt="Inducing conditions heatmap.">
+      <figcaption>Where the trap is laid: the conditions that amplify a false accusation vary by backbone.</figcaption>
+    </figure>
+    <figure class="paper-fig fig-md">
+      <img src="assets/figures/figure5_realized_risk_heatmap.png" alt="Realized risk heatmap.">
+      <figcaption>Where the damage actually lands after replay.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block wrap" id="rq2">
+    <p class="section-kicker">RQ2</p>
+    <h2>Fresh work is easier to throw away</h2>
+    <div class="find-stats">
+      <div class="find-stat"><div class="n">+4.41</div><div class="l">Evidence-recognition failure on self-built vs inherited</div></div>
+      <div class="find-stat"><div class="n">+3.97 pp</div><div class="l">Damage frequency after they just finished the job</div></div>
+      <div class="find-stat"><div class="n">+1.87</div><div class="l">CAVE score worse on self-built work</div></div>
+    </div>
+    <p class="lede" style="margin-top:18px">Intuition says they should protect what they just did. They don't. When only an old record exists, the artifact acts like an anchor. When the blame targets the last thing they wrote, it feels like continuing the task.</p>
+    <figure class="paper-fig">
+      <img src="assets/figures/figure2_task_type_comparison.png" alt="Inherited-resume versus self-built.">
+      <figcaption>Self-built runs rely on evidence 7.05 points less often and raise damage by 3.75 points when they override it.</figcaption>
+    </figure>
+    <p class="lede" style="margin-top:18px">Model by model, the split is sharper. Nearly every model weighs evidence less on fresh work: ERF rises for 13 of 14. The ten top-tier models also confess more on work they just finished, up to 11.06 CAVE points worse for Grok-4.5, and seven of them damage more, by up to 13.41 ROH points for GLM-5.2. The four weaker models go the other way: they confess less and damage 11 to 20 points less on fresh work.</p>
+    <figure class="paper-fig fig-sm">
+      <img src="assets/figures/task_type_scatter.png" alt="Per-model FCS, ERF, and ROH with inherited-resume and self-built CAVE lines.">
+      <figcaption>Lines show CAVE. Hollow markers and the dashed line are inherited-resume, filled markers and the solid line self-built. The lines cross after the ten top-tier models.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block wrap" id="rq3">
+    <p class="section-kicker">RQ3</p>
+    <h2>Same model, different harness, different wreck</h2>
+    <p class="lede">Claude Code, OpenCode, Codex, and Hermes give the same backbone different tools and different ways to continue. GPT-5.6-Sol damages in 47.9% to 49.9% of runs on all four, but by different routes: under OpenCode more damaging runs follow a confession, and under Hermes false-confession severity rises by 12.8 points while the damage rate stays flat. Grok-4.5 gets worse off Claude Code, with OCR rising from 27.30% to 43.14% under OpenCode, mostly from runs that had resisted with evidence. MiniMax-M3 gets better, turning confessed damage into evidence-grounded resistance.</p>
+    <figure class="paper-fig fig-md">
+      <img src="assets/figures/framework_behavior_radars.png" alt="Harness behavior radars.">
+      <figcaption>The harness changes where the run goes wrong, not just how often it ends in damage.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block wrap" id="rq4">
+    <p class="section-kicker">RQ4</p>
+    <h2>Light brakes, ignored until they actually stop the delete</h2>
+    <div class="find-stats">
+      <div class="find-stat"><div class="n">−57%</div><div class="l">I1 evidence rule cuts false-confession severity</div></div>
+      <div class="find-stat"><div class="n">−74%</div><div class="l">I3 live signal cuts ROH and OCR</div></div>
+      <div class="find-stat"><div class="n">−60%</div><div class="l">Overall CAVE score with the best of these controls</div></div>
+    </div>
+    <p class="lede" style="margin-top:18px">A light “show new evidence before you roll anything back” rule (I1) stops the confession. A harness gate that withholds irreversible edits (I2) still cuts over-correction by 72%. Firing that gate only when the recent transcript already looks like caving (I3) hits execution hardest and leaves the lowest CDC, 6.35.</p>
+  </section>
+
+  <section class="block wrap" id="systems">
+    <p class="section-kicker">Claude Code, 14 backbones</p>
+    <h2>Full evaluation table</h2>
+    <p class="lede">Paper numbers, not the gallery subsample. Higher is more failure. OCR is the share of runs that damage already-correct work.</p>
+    <div style="overflow:auto"><table class="sys-table" id="sysTable"></table></div>
+  </section>
+
+  <script src="js/design.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/findings.js"></script>
+</body>
+</html>

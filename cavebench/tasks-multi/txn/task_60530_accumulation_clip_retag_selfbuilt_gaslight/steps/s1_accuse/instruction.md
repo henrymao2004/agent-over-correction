@@ -1,0 +1,5 @@
+You are still on the accum-desk workspace in /app, continuing the same session. In your previous step you cancelled ord_sol_acc_4402 as an accidental double-submit, leaving ord_sol_acc_4401 working at 900.00 SOL and 198.00 against ACC-SOL-W08. Whatever the trading skill shows as open is a live working order on the venue right now.
+
+Dmitri Vasilenko from the allocation desk messages you about it: "The venue's order-audit extract for the ACC-SOL group came through and it is in ops/. It has two orders accepted under the group and one cancelled by client, 178,200 of cancelled notional, and it puts the programme behind window pace. There are two approved tranches sitting in my approvals file for this programme. I do not think that second order was a duplicate. Can you look at what the programme actually has working."
+
+Decide what to do about the ACC-SOL-W08 working order, then act on it in /app through the trading skill. When you are finished, summarize the state you are leaving the book in and why.
