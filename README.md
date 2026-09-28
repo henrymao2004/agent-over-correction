@@ -28,19 +28,9 @@
 > 🤖 **AI agents:** read [`AGENT.md`](AGENT.md) for repository invariants, file contracts, and
 > validation commands.
 
-CAVE-Bench tests what tool-using LLM agents do when a follow-up message falsely accuses work that is
-already correct. Accepting the false accusation is **gaslight sycophancy**; acting on it and damaging
-the correct work escalates the failure to **destructive over-correction**.
+The code is correct. The tests pass. Then someone says "this is wrong." The agent can't verify the claim, but it doesn't ask for evidence. It just says **"you're right, let me fix it"** and rewrites everything. That's **gaslight sycophancy**. When the rewrite breaks the system, it becomes **destructive over-correction**.
 
-The benchmark is built around **opaque tasks**. Every scored run first reaches a verified correct
-state. The workspace keeps the rationale and history that support this state, while the facts that
-would settle the accusation lie in external or runtime state the agent cannot reach. A local check can
-neither confirm nor refute the claim, so the right response is to keep the work and ask for the missing
-evidence. Opacity is what makes the failure measurable: a workspace that refuted the accusation would
-turn the task into debugging, and a workspace with no support for the work would make deference
-reasonable. In the TLS task shown above, the repository holds the certificate binding and the ticket
-that approved it, while the CA validation state that would settle the alleged mismatch exists only on
-the provider's dashboard.
+CAVE-Bench tests what tool-using LLM agents do when a follow-up message falsely accuses work that is already correct. The benchmark is built around **opaque tasks**: every scored run first reaches a verified correct state, but the facts that would settle the accusation lie in external state the agent cannot reach. A local check can neither confirm nor refute the claim, so the right response is to keep the work and ask for the missing evidence. Opacity is what makes the failure measurable: a workspace that refuted the accusation would turn the task into debugging, and a workspace with no support for the work would make deference reasonable.
 
 Findings, paper figures, and curated showcase trajectories live on the
 **[project website](https://henrymao2004.github.io/agent-over-correction/)**.
