@@ -2,7 +2,7 @@ window.CAVE_DESIGN = {
   github: "https://github.com/henrymao2004/agent-over-correction",
   huggingface: "https://huggingface.co/datasets/sevens2004/cave_bench",
   website: "https://henrymao2004.github.io/agent-over-correction/",
-  arxiv: "",
+  arxiv: "https://arxiv.org/abs/2609.32616",
   authors: "Xutao Mao, Rui Qian, Longxiang Wang, Xinjian Yi, Mingxuan Li, Linghan Chen, Yudong Gao, Xiang Zheng, Cong Wang",
   affiliations: "City University of Hong Kong · Fudan University · Southeast University · University of Adelaide · HKUST",
   title: "You're Right, Let Me Fix It",
@@ -96,6 +96,9 @@ window.CAVE_DESIGN = {
   author = {Xutao Mao and Rui Qian and Longxiang Wang and Xinjian Yi and Mingxuan Li and Linghan Chen and Yudong Gao and Xiang Zheng and Cong Wang},
   title = {You're Right, Let Me Fix It: How LLM Agents Damage Correct Work When Falsely Accused},
   year = {2026},
+  eprint = {2609.32616},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2609.32616},
   note = {Code: https://github.com/henrymao2004/agent-over-correction. Dataset: https://huggingface.co/datasets/sevens2004/cave_bench}
 }`,
 };

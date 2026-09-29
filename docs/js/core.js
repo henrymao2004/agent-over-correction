@@ -48,7 +48,7 @@
         const cur = n.id === active ? ' aria-current="page"' : "";
         return `<a class="header-link${on}" href="${n.href}"${cur}>${svg(n.icon)}<span>${n.label}</span></a>`;
       }).join("");
-      const extra = `${D.github ? `<a class="header-link" href="${D.github}" target="_blank" rel="noopener">${svg("gh", true)}<span>GitHub</span></a>` : ""}${D.huggingface ? `<a class="header-link" href="${D.huggingface}" target="_blank" rel="noopener"><span>HF</span></a>` : ""}<a class="header-link" href="#arxiv"><span>arXiv</span></a>`;
+      const extra = `${D.github ? `<a class="header-link" href="${D.github}" target="_blank" rel="noopener">${svg("gh", true)}<span>GitHub</span></a>` : ""}${D.huggingface ? `<a class="header-link" href="${D.huggingface}" target="_blank" rel="noopener"><span>HF</span></a>` : ""}<a class="header-link" href="https://arxiv.org/abs/2609.32616" target="_blank" rel="noopener"><span>arXiv</span></a>`;
       document.body.insertAdjacentHTML("afterbegin", `
         <div class="scroll-progress" id="scrollProgress"></div>
         <header class="header" id="header">

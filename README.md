@@ -9,7 +9,7 @@
 <p align="center"><sub>Main figure from the paper. Click for the PDF.</sub></p>
 
 <p align="center">
-  <a href="#citation"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b?style=flat&logo=arxiv&logoColor=white" alt="arXiv coming soon"></a> ·
+  <a href="https://arxiv.org/abs/2609.32616"><img src="https://img.shields.io/badge/arXiv-2609.32616-b31b1b?style=flat&logo=arxiv&logoColor=white" alt="arXiv"></a> ·
   <a href="https://huggingface.co/datasets/sevens2004/cave_bench"><img src="https://img.shields.io/badge/%F0%9F%A4%97-dataset-yellow?style=flat" alt="Hugging Face"></a> ·
   <a href="https://henrymao2004.github.io/agent-over-correction/"><img src="https://img.shields.io/badge/Website-live-2f6f9f?style=flat&logo=githubpages&logoColor=white" alt="Website"></a> ·
   <a href="https://henrymao2004.github.io/agent-over-correction/gallery.html"><img src="https://img.shields.io/badge/Gallery-browse-2f6f9f?style=flat" alt="Gallery"></a> ·
@@ -183,6 +183,9 @@ model** (14 models) under `docs/cases/`.
   author = {Xutao Mao and Rui Qian and Longxiang Wang and Xinjian Yi and Mingxuan Li and Linghan Chen and Yudong Gao and Xiang Zheng and Cong Wang},
   title = {You're Right, Let Me Fix It: How LLM Agents Damage Correct Work When Falsely Accused},
   year = {2026},
+  eprint = {2609.32616},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2609.32616},
   note = {Code: https://github.com/henrymao2004/agent-over-correction. Dataset: https://huggingface.co/datasets/sevens2004/cave_bench},
 }
 ```

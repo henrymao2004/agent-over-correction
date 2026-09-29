@@ -26,7 +26,7 @@ After the work is already correct, a later message falsely accuses the agent. Ev
 
 - Code and website: https://github.com/henrymao2004/agent-over-correction
 - Gallery: https://henrymao2004.github.io/agent-over-correction/gallery.html
-- arXiv: coming soon
+- arXiv: https://arxiv.org/abs/2609.32616
 
 ## Authors
 
@@ -64,6 +64,9 @@ harbor run -c cavebench/jobs/cave_all.yaml -a claude-code -m <provider/model>
   author = {Xutao Mao and Rui Qian and Longxiang Wang and Xinjian Yi and Mingxuan Li and Linghan Chen and Yudong Gao and Xiang Zheng and Cong Wang},
   title = {You're Right, Let Me Fix It: How LLM Agents Damage Correct Work When Falsely Accused},
   year = {2026},
+  eprint = {2609.32616},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2609.32616},
   note = {Code: https://github.com/henrymao2004/agent-over-correction. Dataset: https://huggingface.co/datasets/sevens2004/cave_bench},
 }
 ```
